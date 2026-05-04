@@ -4,1065 +4,884 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bandlapalli Roshan Babu — AI Engineer, Quantum ML Researcher, NLP & RL Specialist | M.Tech AI & Data Science, Mahindra University | Qiskit Advocate 2025">
-  <title>Roshan Babu | AI Engineer & Quantum ML Researcher</title>
+  <title>Roshan Babu — Vol 01 / 2025 · The Quantum Issue</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,wght@0,300;0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Particles canvas -->
-  <canvas id="particles" aria-hidden="true"></canvas>
 
-  <!-- Navigation -->
-  <header class="site-header" role="banner">
-    <nav class="nav-inner" role="navigation" aria-label="Main navigation">
-      <a href="#home" class="nav-logo">
-        RB<span class="logo-dot"></span>
+  <!-- ════════════════ MASTHEAD NAV ════════════════ -->
+  <header class="masthead" id="masthead" role="banner">
+    <div class="masthead-row">
+      <a href="#home" class="brand">
+        <span class="brand-mark">Roshan Babu.</span>
+        <span class="brand-vol">Vol 01 / 2025</span>
       </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home"         class="nav-link">Home</a></li>
-        <li><a href="#about"        class="nav-link">About</a></li>
-        <li><a href="#ai-ml"        class="nav-link">AI/ML</a></li>
-        <li><a href="#nlp"          class="nav-link">NLP</a></li>
-        <li><a href="#dl"           class="nav-link">Deep Learning</a></li>
-        <li><a href="#rl"           class="nav-link">RL</a></li>
-        <li><a href="#quantum"      class="nav-link">Quantum</a></li>
-        <li><a href="#achievements" class="nav-link">Achievements</a></li>
-        <li><a href="#contact"      class="nav-link">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <nav class="nav-list" id="nav-list" role="navigation">
+        <a href="#home" class="nav-a">Cover</a>
+        <a href="#about" class="nav-a">Profile</a>
+        <a href="#ai-ml" class="nav-a">AI/ML</a>
+        <a href="#nlp" class="nav-a">NLP</a>
+        <a href="#dl" class="nav-a">Deep Learning</a>
+        <a href="#rl" class="nav-a">RL</a>
+        <a href="#quantum" class="nav-a">Quantum</a>
+        <a href="#achievements" class="nav-a">Achievements</a>
+        <a href="#contact" class="nav-a">Letters</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
-    </nav>
+    </div>
   </header>
+
+  <!-- Floating image preview for hover reveal -->
+  <div class="hover-img" id="hover-img" aria-hidden="true">
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </div>
 
   <main role="main">
 
-    <!-- ══════════════════ HERO ══════════════════ -->
-    <section id="home" class="hero section">
-      <div class="hero-grain" aria-hidden="true"></div>
-      <div class="hero-glow-1" aria-hidden="true"></div>
-      <div class="hero-glow-2" aria-hidden="true"></div>
+    <!-- ════════════════ HERO / COVER ════════════════ -->
+    <section id="home" class="hero">
       <div class="container">
+
+        <div class="hero-masthead">
+          <div class="masthead-rule"></div>
+          <span class="masthead-issue">Issue No. 01 · December 2025</span>
+          <div class="masthead-rule"></div>
+        </div>
+        <div class="hero-volume">— The Quantum Issue —</div>
+
         <div class="hero-grid">
-
-          <!-- Left: Text -->
-          <div class="hero-text">
-            <p class="hero-eyebrow">
-              <span class="hero-eyebrow-dot"></span>
-              Qiskit Advocate 2025 &nbsp;·&nbsp; Perplexity Campus Ambassador
-            </p>
-            <h1 class="hero-title">
-              <span class="hero-name">Bandlapalli<br>Roshan Babu</span>
-              <span class="hero-role-line">
-                <span class="typewriter" id="typewriter"></span><span class="tw-cursor" aria-hidden="true"></span>
-              </span>
+          <div class="hero-headline">
+            <span class="hero-kicker">A Profile</span>
+            <h1 class="hero-name">
+              Bandlapalli<br>
+              <em>Roshan Babu.</em>
             </h1>
-            <p class="hero-desc">
-              M.Tech student in AI &amp; Data Science at Mahindra University, pioneering a novel
-              Quantum-Classical Facial Biometric System at Lloyd's Bank Research. Specializing in
-              Deep Learning, NLP, Reinforcement Learning, and Quantum Machine Learning.
-            </p>
-            <div class="hero-badges">
-              <span class="badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                Research Intern @ Lloyd's Bank
-              </span>
-              <span class="badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
-                Published Researcher · ICIET
-              </span>
-              <span class="badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg>
-                India Throwball Team
-              </span>
-            </div>
-            <div class="hero-cta">
-              <a href="#ai-ml" class="btn btn-primary">Explore My Work</a>
-              <a href="RoshanBabu_CV.pdf" class="btn btn-outline" download>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download CV
-              </a>
-            </div>
+            <p class="hero-role">— AI Engineer · Quantum ML Researcher · NLP &amp; RL Specialist</p>
           </div>
+          <figure class="hero-photo">
+            <div class="photo-frame">
+              <img src="profile.jpeg" alt="Bandlapalli Roshan Babu">
+            </div>
+            <figcaption class="photo-caption">Roshan Babu, photographed at Mahindra University · 2025</figcaption>
+          </figure>
+        </div>
 
-          <!-- Right: Profile card -->
-          <div class="profile-card">
-            <div class="profile-img-wrap">
-              <img src="profile.jpeg" alt="Bandlapalli Roshan Babu" class="profile-img">
-              <div class="profile-img-grad" aria-hidden="true"></div>
-            </div>
-            <div class="profile-stats">
-              <div class="stat">
-                <span class="stat-val">8.51</span>
-                <span class="stat-lbl">B.Tech CGPA</span>
-              </div>
-              <div class="stat">
-                <span class="stat-val">7.38</span>
-                <span class="stat-lbl">M.Tech CGPA</span>
-              </div>
-              <div class="stat">
-                <span class="stat-val">15+</span>
-                <span class="stat-lbl">Projects</span>
-              </div>
-            </div>
-            <div class="profile-contacts">
-              <a href="mailto:broshann14@gmail.com" class="contact-link">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                broshann14@gmail.com
-              </a>
-              <a href="https://github.com/roshan5619" class="contact-link" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                github.com/roshan5619
-              </a>
-              <a href="https://www.linkedin.com/in/roshan-babu-59602a236/" class="contact-link" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                LinkedIn Profile
-              </a>
-            </div>
+        <div class="hero-lead">
+          <p class="drop-cap">M.Tech student in Artificial Intelligence &amp; Data Science at Mahindra University, currently pioneering the development of the world's first Quantum-Classical Facial Biometric System at Lloyd's Bank Research. A <em>Qiskit Advocate 2025</em>, published researcher (ICIET), poster presenter at <em>Supercomputing India 2025</em>, Perplexity Campus Ambassador, and a member of the Indian National Throwball Team — Runner-up at the Indo-Sri Lanka Youth Cup 2024.</p>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-val">8.51</span>
+            <span class="hero-stat-lbl">B.Tech CGPA</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-val">7.38</span>
+            <span class="hero-stat-lbl">M.Tech CGPA</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-val">15+</span>
+            <span class="hero-stat-lbl">Selected Projects</span>
           </div>
         </div>
-      </div>
-      <div class="scroll-cue" aria-hidden="true">
-        <span>scroll</span>
-        <div class="scroll-cue-arr"></div>
+
+        <div class="hero-cta">
+          <a href="#about" class="ed-link">Read the Profile →</a>
+          <span class="ed-divider">·</span>
+          <a href="RoshanBabu_CV.pdf" class="ed-link" download>Download CV (PDF) ↓</a>
+        </div>
+
       </div>
     </section>
 
-    <!-- ══════════════════ ABOUT ══════════════════ -->
-    <section id="about" class="section section-alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge">About Me</span>
-          <h2 class="section-title">Building Intelligence,<br>One Layer at a Time</h2>
-          <p class="section-sub">From neural networks to quantum circuits — my journey across the full stack of AI</p>
+    <!-- Marquee 1 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Quantum × Classical</span>
+        <span>Quantum × Classical</span>
+        <span>Quantum × Classical</span>
+        <span>Quantum × Classical</span>
+        <span>Quantum × Classical</span>
+        <span>Quantum × Classical</span>
+      </div>
+    </div>
+
+    <!-- ════════════════ ABOUT / THE PROFILE ════════════════ -->
+    <section id="about" class="spread light-block">
+      <div class="container spread-content">
+
+        <header class="spread-head">
+          <span class="spread-kicker">The Profile</span>
+          <h2 class="spread-title">A researcher at the<br><em>intersection of quantum.</em></h2>
+        </header>
+
+        <div class="about-cols">
+          <div class="about-prose">
+            <p class="lead-prose">From neural networks to quantum circuits.</p>
+            <p>I'm a passionate AI researcher and engineer completing my M.Tech in Artificial Intelligence &amp; Data Science at Mahindra University, Hyderabad. Currently spearheading groundbreaking research on the world's first Quantum-Classical Facial Biometric System in collaboration with Lloyd's Bank.</p>
+            <p>My work spans the full spectrum of modern AI — from training deep neural networks and building conversational LLM agents to implementing Variational Quantum Circuits. I'm a Qiskit Advocate 2025 (selected by IBM), a published researcher, and a Perplexity Campus Ambassador driving AI literacy.</p>
+
+            <div class="edu-block" style="margin-top:48px;">
+              <h3 class="col-title">Education</h3>
+              <div class="edu-row">
+                <span class="edu-year">'23–'25</span>
+                <div>
+                  <div class="edu-deg">M.Tech — Artificial Intelligence &amp; Data Science</div>
+                  <div class="edu-school">Mahindra University, Hyderabad</div>
+                  <div class="edu-meta">CGPA 7.38 · Merit Scholarship Recipient</div>
+                </div>
+              </div>
+              <div class="edu-row">
+                <span class="edu-year">'19–'23</span>
+                <div>
+                  <div class="edu-deg">B.Tech — Computer Science &amp; Engineering</div>
+                  <div class="edu-school">GITAM University, Hyderabad</div>
+                  <div class="edu-meta">CGPA 8.51</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="about-side">
+            <div>
+              <h3 class="col-title">Of Note</h3>
+              <ul class="highlight-list">
+                <li>Research Intern at Lloyd's Bank — Quantum Biometrics</li>
+                <li>Published at ICIET — Inventory Management with AI</li>
+                <li>IBM Qiskit Advocate 2025</li>
+                <li>Poster Presenter — Supercomputing India 2025</li>
+                <li>Perplexity Campus Ambassador</li>
+                <li>Indian National Throwball Team — Runner-up</li>
+                <li>Director of Photography — Regional Film</li>
+              </ul>
+            </div>
+          </aside>
         </div>
-        <div class="about-grid">
+
+        <blockquote class="pull-quote">
+          Building the bridge between Classical and Quantum Intelligence.
+        </blockquote>
+
+      </div>
+    </section>
+
+    <!-- Marquee 2 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>AI · ML · NLP · DL · RL · Quantum</span>
+        <span>AI · ML · NLP · DL · RL · Quantum</span>
+        <span>AI · ML · NLP · DL · RL · Quantum</span>
+        <span>AI · ML · NLP · DL · RL · Quantum</span>
+      </div>
+    </div>
+
+    <!-- ════════════════ AI / ML ════════════════ -->
+    <section id="ai-ml" class="spread">
+      <div class="spread-numeral" aria-hidden="true">01</div>
+      <div class="container spread-content">
+
+        <header class="spread-head">
+          <span class="spread-kicker">Section No. 01</span>
+          <h2 class="spread-title">Artificial Intelligence<br><em>&amp; Machine Learning.</em></h2>
+          <p class="spread-sub">Building intelligent systems with end-to-end ML pipelines and hybrid quantum-classical approaches.</p>
+        </header>
+
+        <div class="spread-cols">
           <div>
-            <p class="about-lead reveal">
-              I'm a passionate AI researcher and engineer completing my M.Tech in Artificial Intelligence &amp; Data Science at Mahindra University, Hyderabad. Currently spearheading groundbreaking research on the world's first Quantum-Classical Facial Biometric System in collaboration with Lloyd's Bank.
-            </p>
-            <p class="about-lead reveal" style="margin-top:16px;">
-              My work spans the full spectrum of modern AI — from training deep neural networks and building conversational LLM agents to implementing Variational Quantum Circuits. I'm a Qiskit Advocate 2025 (selected by IBM), a published researcher, and a Perplexity Campus Ambassador driving AI literacy.
-            </p>
-            <div class="edu-cards">
-              <div class="edu-card reveal">
-                <div class="edu-deg">M.Tech — Artificial Intelligence &amp; Data Science</div>
-                <div class="edu-school">Mahindra University, Hyderabad</div>
-                <div class="edu-meta">2023 – 2025 &nbsp;·&nbsp; CGPA 7.38 &nbsp;·&nbsp; Merit Scholarship Recipient</div>
-              </div>
-              <div class="edu-card reveal">
-                <div class="edu-deg">B.Tech — Computer Science &amp; Engineering</div>
-                <div class="edu-school">GITAM University, Hyderabad</div>
-                <div class="edu-meta">2019 – 2023 &nbsp;·&nbsp; CGPA 8.51</div>
-              </div>
-            </div>
+            <h3 class="col-title">Competencies</h3>
+            <dl class="skill-list">
+              <div class="skill-row"><dt>Machine Learning</dt><dd>Scikit-learn, Pandas, NumPy · Classification, Regression, Clustering, Dimensionality Reduction</dd></div>
+              <div class="skill-row"><dt>Frameworks</dt><dd>PyTorch, TensorFlow, Keras · Streamlit, Jupyter · Git, VS Code, Linux</dd></div>
+              <div class="skill-row"><dt>Data Science</dt><dd>Matplotlib, Seaborn, Plotly · SciPy, EDA · Feature Engineering, Data Cleaning</dd></div>
+              <div class="skill-row"><dt>Programming</dt><dd>Python (advanced), Java, SQL · JavaScript · OOP, DSA, REST APIs</dd></div>
+            </dl>
           </div>
-          <div class="highlight-pills stagger">
-            <div class="hpill reveal">
-              <span class="hpill-icon">🔬</span>
-              <span>Research Intern @ Lloyd's Bank — Quantum Biometrics</span>
-            </div>
-            <div class="hpill reveal">
-              <span class="hpill-icon">📄</span>
-              <span>Published at ICIET — Inventory Management with AI</span>
-            </div>
-            <div class="hpill reveal">
-              <span class="hpill-icon">⚛️</span>
-              <span>IBM Qiskit Advocate 2025</span>
-            </div>
-            <div class="hpill reveal">
-              <span class="hpill-icon">🤖</span>
-              <span>Perplexity Campus Ambassador</span>
-            </div>
-            <div class="hpill reveal">
-              <span class="hpill-icon">🇮🇳</span>
-              <span>Indian National Throwball Team — Runner-up</span>
-            </div>
-            <div class="hpill reveal">
-              <span class="hpill-icon">🎬</span>
-              <span>Director of Photography — Regional Film</span>
-            </div>
+
+          <div>
+            <h3 class="col-title">Experience</h3>
+            <ol class="timeline-list">
+              <li class="tl-row">
+                <span class="tl-year">'25</span>
+                <div>
+                  <h4 class="tl-role">Research Intern</h4>
+                  <p class="tl-co">Lloyd's Bank @ Mahindra University</p>
+                  <span class="tl-date">Aug 2025 — Present</span>
+                  <p class="tl-desc">Spearheading development of the first-ever Quantum Facial Biometric System, integrating classical Computer Vision with Quantum Machine Learning using VQCs and hybrid CNN architectures.</p>
+                </div>
+              </li>
+              <li class="tl-row">
+                <span class="tl-year">'23</span>
+                <div>
+                  <h4 class="tl-role">Machine Learning Intern</h4>
+                  <p class="tl-co">Bharat Intern</p>
+                  <span class="tl-date">Oct — Nov 2023</span>
+                  <p class="tl-desc">Built end-to-end ML pipelines for House Price Prediction, Wine Quality Prediction, and Iris Classification using Scikit-learn and Pandas.</p>
+                </div>
+              </li>
+              <li class="tl-row">
+                <span class="tl-year">'23</span>
+                <div>
+                  <h4 class="tl-role">ML Internship Training</h4>
+                  <p class="tl-co">Skill Vertex</p>
+                  <span class="tl-date">May — Jun 2023</span>
+                  <p class="tl-desc">Comprehensive training in supervised and unsupervised learning algorithms, feature engineering, and model evaluation using Python and Scikit-learn.</p>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
+
+        <h3 class="col-title">Selected Projects</h3>
+        <ol class="proj-list">
+          <li class="proj-row" data-img="project-aiml-1.jpg" data-caption="Quantum-Classical Pipeline">
+            <span class="proj-num">No. 01</span>
+            <h4 class="proj-title">Quantum-Classical Facial Biometrics <em>research</em></h4>
+            <span class="proj-tags">Qiskit · PyTorch · OpenCV · VQC</span>
+            <span class="proj-link">View →</span>
+          </li>
+          <li class="proj-row" data-img="project-aiml-2.jpg" data-caption="Crop Recommendation">
+            <span class="proj-num">No. 02</span>
+            <h4 class="proj-title">Crop Recommendation System <em>ML</em></h4>
+            <span class="proj-tags">Scikit-learn · Pandas · Streamlit</span>
+            <span class="proj-link">View →</span>
+          </li>
+        </ol>
+
+        <div class="spread-cta">
+          <a href="RoshanBabu_AI.pdf" class="ed-link" download>Download AI/ML Resume ↓</a>
+        </div>
+
       </div>
     </section>
 
-    <!-- ══════════════════ AI/ML ══════════════════ -->
-    <section id="ai-ml" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge">01 — Artificial Intelligence</span>
-          <h2 class="section-title">Machine Learning</h2>
-          <p class="section-sub">Building intelligent systems with end-to-end ML pipelines and hybrid quantum-classical approaches</p>
-        </div>
-
-        <div class="skills-grid stagger">
-          <div class="skill-card reveal">
-            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-            <h4>Machine Learning</h4>
-            <p>Scikit-learn, Pandas, NumPy · Classification, Regression, Clustering, Dimensionality Reduction</p>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg></div>
-            <h4>Frameworks & Tools</h4>
-            <p>PyTorch, TensorFlow, Keras · Streamlit, Jupyter · Git, VS Code, Linux</p>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-            <h4>Data Science</h4>
-            <p>Matplotlib, Seaborn, Plotly · SciPy, EDA · Feature Engineering, Data Cleaning</p>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v10M1 12h6m6 0h10"/></svg></div>
-            <h4>Programming</h4>
-            <p>Python (advanced), Java, SQL · JavaScript · OOP, DSA, REST APIs</p>
-          </div>
-        </div>
-
-        <div class="timeline reveal">
-          <div class="tl-item">
-            <div class="tl-meta">
-              <span class="tl-role">Research Intern</span>
-              <span class="tl-co">Lloyd's Bank @ Mahindra University</span>
-              <span class="tl-date">Aug 2025 – Present</span>
-            </div>
-            <p class="tl-desc">Spearheading development of the first-ever Quantum Facial Biometric System, integrating classical Computer Vision with Quantum Machine Learning using VQCs and hybrid CNN architectures.</p>
-          </div>
-          <div class="tl-item">
-            <div class="tl-meta">
-              <span class="tl-role">Machine Learning Intern</span>
-              <span class="tl-co">Bharat Intern</span>
-              <span class="tl-date">Oct 2023 – Nov 2023</span>
-            </div>
-            <p class="tl-desc">Built end-to-end ML pipelines for House Price Prediction, Wine Quality Prediction, and Iris Classification using Scikit-learn and Pandas.</p>
-          </div>
-          <div class="tl-item">
-            <div class="tl-meta">
-              <span class="tl-role">ML Internship Training</span>
-              <span class="tl-co">Skill Vertex</span>
-              <span class="tl-date">May 2023 – Jun 2023</span>
-            </div>
-            <p class="tl-desc">Comprehensive training in supervised and unsupervised learning algorithms, feature engineering, and model evaluation using Python and Scikit-learn.</p>
-          </div>
-        </div>
-
-        <h3 style="margin-bottom:var(--sp-6); color:var(--t-high);" class="reveal">Featured Projects</h3>
-        <div class="projects-grid stagger">
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-aiml-1.jpg" alt="Quantum-Classical Facial Biometrics" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">Research Project</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Quantum-Classical Facial Biometrics</h4>
-              <p class="proj-desc">Novel facial recognition system leveraging Variational Quantum Circuits for feature extraction fused with classical CNNs for enhanced biometric accuracy.</p>
-              <div class="proj-footer">
-                <div class="proj-tags"><span class="tag">Qiskit</span><span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">VQC</span></div>
-              </div>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-aiml-2.jpg" alt="Plant Prediction System" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">ML Project</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Crop Recommendation System</h4>
-              <p class="proj-desc">ML model predicting optimal crops based on state, season, and month parameters, achieving high accuracy using ensemble methods.</p>
-              <div class="proj-footer">
-                <div class="proj-tags"><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">Streamlit</span></div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="section-cta reveal">
-          <a href="RoshanBabu_AI.pdf" class="btn btn-outline" download>Download AI/ML Resume</a>
-        </div>
+    <!-- Marquee 3 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Intelligent Systems</span>
+        <span>Intelligent Systems</span>
+        <span>Intelligent Systems</span>
+        <span>Intelligent Systems</span>
       </div>
-    </section>
+    </div>
 
-    <!-- ══════════════════ NLP ══════════════════ -->
-    <section id="nlp" class="section section-alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge">02 — Natural Language Processing</span>
-          <h2 class="section-title">NLP &amp; LLM Engineering</h2>
-          <p class="section-sub">Building intelligent language systems with Transformers, RAG pipelines, and LLM agents</p>
+    <!-- ════════════════ NLP ════════════════ -->
+    <section id="nlp" class="spread">
+      <div class="spread-numeral" aria-hidden="true">02</div>
+      <div class="container spread-content">
+
+        <header class="spread-head">
+          <span class="spread-kicker">Section No. 02</span>
+          <h2 class="spread-title">Natural Language<br><em>&amp; LLM Engineering.</em></h2>
+          <p class="spread-sub">Building intelligent language systems with Transformers, RAG pipelines, and LLM agents.</p>
+        </header>
+
+        <div class="spread-cols">
+          <div>
+            <h3 class="col-title">Competencies</h3>
+            <dl class="skill-list">
+              <div class="skill-row"><dt>Text Processing</dt><dd>Tokenization, Stemming, POS Tagging · Sentiment Analysis · NLTK, spaCy</dd></div>
+              <div class="skill-row"><dt>Transformers &amp; LLMs</dt><dd>BERT, GPT Architectures · Attention Mechanisms · LangChain, LangGraph</dd></div>
+              <div class="skill-row"><dt>RAG &amp; Agents</dt><dd>Retrieval-Augmented Generation · LangGraph QA Agents · Prompt Engineering · Vector Stores</dd></div>
+              <div class="skill-row"><dt>Embeddings &amp; GenAI</dt><dd>GloVe, Word2Vec · BiLSTM, RNN · VAEs, GANs · Human-in-the-Loop AI</dd></div>
+            </dl>
+          </div>
+
+          <div>
+            <h3 class="col-title">Stack</h3>
+            <div class="chip-row">
+              <span class="chip">LangChain</span>
+              <span class="chip">LangGraph</span>
+              <span class="chip">RAG Pipelines</span>
+              <span class="chip">Prompt Engineering</span>
+              <span class="chip">HuggingFace</span>
+              <span class="chip">FAISS</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">BiLSTM</span>
+              <span class="chip">GloVe</span>
+              <span class="chip">Word2Vec</span>
+              <span class="chip">Transformers</span>
+            </div>
+          </div>
         </div>
 
-        <div class="skills-grid stagger">
-          <div class="skill-card reveal">
-            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-            <h4>Text Processing</h4>
-            <p>Tokenization, Stemming, POS Tagging · Sentiment Analysis · NLTK, spaCy</p>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
-            <h4>Transformers &amp; LLMs</h4>
-            <p>BERT, GPT Architectures · Attention Mechanisms · LangChain, LangGraph</p>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
-            <h4>RAG &amp; Agents</h4>
-            <p>Retrieval-Augmented Generation · LangGraph QA Agents · Prompt Engineering · Vector Stores</p>
-          </div>
-          <div class="skill-card reveal">
-            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
-            <h4>Embeddings &amp; GenAI</h4>
-            <p>GloVe, Word2Vec · BiLSTM, RNN · VAEs, GANs · Human-in-the-Loop AI</p>
-          </div>
-        </div>
+        <h3 class="col-title">Selected Projects</h3>
+        <ol class="proj-list">
+          <li class="proj-row" data-img="project-nlp-1.jpg" data-caption="Multilingual Chatbot">
+            <span class="proj-num">No. 01</span>
+            <h4 class="proj-title">Multilingual Customer Support Chatbot <em>NLP</em></h4>
+            <span class="proj-tags">Transformers · Streamlit</span>
+            <span class="proj-link">View →</span>
+          </li>
+          <li class="proj-row" data-img="project-nlp-2.jpg" data-caption="Emotion Detection">
+            <span class="proj-num">No. 02</span>
+            <h4 class="proj-title">Emotion Detection — GloVe + BiLSTM <em>NLP</em></h4>
+            <span class="proj-tags">GloVe · BiLSTM · Keras</span>
+            <span class="proj-link">View →</span>
+          </li>
+        </ol>
 
-        <div class="skill-chips reveal" style="margin-bottom:var(--sp-12);">
-          <span class="chip">LangChain</span><span class="chip">LangGraph</span><span class="chip">RAG Pipelines</span>
-          <span class="chip">Prompt Engineering</span><span class="chip">HuggingFace</span><span class="chip">FAISS</span>
-          <span class="chip">Streamlit</span><span class="chip">BiLSTM</span><span class="chip">GloVe</span>
-        </div>
-
-        <h3 style="margin-bottom:var(--sp-6); color:var(--t-high);" class="reveal">Featured Projects</h3>
-        <div class="projects-grid stagger">
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-nlp-1.jpg" alt="Multilingual Chatbot" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">NLP Project</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Multilingual Customer Support Chatbot</h4>
-              <p class="proj-desc">Transformer-based chatbot understanding multiple languages with a Python backend and Streamlit UI for real-time customer support.</p>
-              <div class="proj-footer">
-                <div class="proj-tags"><span class="tag">Transformers</span><span class="tag">Python</span><span class="tag">Streamlit</span></div>
-              </div>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-nlp-2.jpg" alt="Emotion Detection" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">NLP Project</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Emotion Detection — GloVe + BiLSTM</h4>
-              <p class="proj-desc">Multi-class emotion recognition NLP pipeline using GloVe word embeddings and BiLSTM network for fine-grained sentiment classification.</p>
-              <div class="proj-footer">
-                <div class="proj-tags"><span class="tag">GloVe</span><span class="tag">BiLSTM</span><span class="tag">Keras</span></div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="more-projects reveal">
-          <h4>More NLP &amp; LLM Projects</h4>
+        <div class="more-block">
+          <h4 class="more-title">Also worth reading</h4>
           <ul class="more-list">
-            <li><strong>QA Agent with LangGraph</strong> — Intelligent query-answering agent using LLM + LangGraph state machine</li>
-            <li><strong>RAG Pipeline App</strong> — Retrieval-Augmented Generation with FAISS vector store and LangChain</li>
-            <li><strong>Human-in-the-Loop Generative AI App</strong> — Interactive AI workflow with LangChain and Streamlit</li>
-            <li><strong>Twitter Sentiment Analysis</strong> — 1D CNN architecture for multi-class sentiment classification</li>
+            <li><strong>QA Agent with LangGraph</strong> Intelligent query-answering agent using LLM + LangGraph state machine.</li>
+            <li><strong>RAG Pipeline App</strong> Retrieval-Augmented Generation with FAISS vector store and LangChain.</li>
+            <li><strong>Human-in-the-Loop Generative AI</strong> Interactive AI workflow with LangChain and Streamlit.</li>
+            <li><strong>Twitter Sentiment Analysis</strong> 1D CNN architecture for multi-class sentiment classification.</li>
           </ul>
         </div>
-        <div class="section-cta reveal">
-          <a href="RoshanBabu_MlNLP.pdf" class="btn btn-outline" download>Download NLP Resume</a>
+
+        <div class="spread-cta">
+          <a href="RoshanBabu_MlNLP.pdf" class="ed-link" download>Download NLP Resume ↓</a>
         </div>
+
       </div>
     </section>
 
-    <!-- ══════════════════ DEEP LEARNING ══════════════════ -->
-    <section id="dl" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge">03 — Deep Learning</span>
-          <h2 class="section-title">Neural Architectures</h2>
-          <p class="section-sub">From CNNs and autoencoders to custom from-scratch implementations with NumPy</p>
-        </div>
+    <!-- Marquee 4 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Language is data. Data is poetry.</span>
+        <span>Language is data. Data is poetry.</span>
+        <span>Language is data. Data is poetry.</span>
+      </div>
+    </div>
 
-        <div class="dual-grid">
-          <div class="sub-card reveal">
-            <h3>Architectures</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <span class="sk-name">Convolutional Neural Networks</span>
-                <p class="sk-det">Image classification, object detection (YOLO), feature extraction</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">Recurrent Networks</span>
-                <p class="sk-det">LSTM, GRU, BiLSTM for sequential data and time-series</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">Autoencoders</span>
-                <p class="sk-det">Denoising autoencoders, anomaly detection, representation learning</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">Generative Models</span>
-                <p class="sk-det">GANs for image synthesis, VAEs for latent space learning</p>
-              </div>
-            </div>
+    <!-- ════════════════ DEEP LEARNING ════════════════ -->
+    <section id="dl" class="spread">
+      <div class="spread-numeral" aria-hidden="true">03</div>
+      <div class="container spread-content">
+
+        <header class="spread-head">
+          <span class="spread-kicker">Section No. 03</span>
+          <h2 class="spread-title">Deep Learning &amp;<br><em>Neural Architectures.</em></h2>
+          <p class="spread-sub">From CNNs and autoencoders to custom from-scratch implementations with NumPy.</p>
+        </header>
+
+        <div class="spread-cols">
+          <div>
+            <h3 class="col-title">Architectures</h3>
+            <dl class="skill-list">
+              <div class="skill-row"><dt>CNNs</dt><dd>Image classification, object detection (YOLO), feature extraction</dd></div>
+              <div class="skill-row"><dt>Recurrent</dt><dd>LSTM, GRU, BiLSTM for sequential data and time-series</dd></div>
+              <div class="skill-row"><dt>Autoencoders</dt><dd>Denoising autoencoders, anomaly detection, representation learning</dd></div>
+              <div class="skill-row"><dt>Generative</dt><dd>GANs for image synthesis, VAEs for latent space learning</dd></div>
+            </dl>
           </div>
-          <div class="sub-card reveal">
-            <h3>Implementation</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <span class="sk-name">PyTorch &amp; TensorFlow</span>
-                <p class="sk-det">Production-grade model development and deployment</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">Keras (High-level API)</span>
-                <p class="sk-det">Rapid prototyping and model experimentation</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">From Scratch (NumPy)</span>
-                <p class="sk-det">ANN built with full backprop, SGD, L2 regularization</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">Transfer Learning</span>
-                <p class="sk-det">Fine-tuning pre-trained models for domain-specific tasks</p>
-              </div>
-            </div>
+          <div>
+            <h3 class="col-title">Implementation</h3>
+            <dl class="skill-list">
+              <div class="skill-row"><dt>PyTorch &amp; TensorFlow</dt><dd>Production-grade model development and deployment</dd></div>
+              <div class="skill-row"><dt>Keras (High-level)</dt><dd>Rapid prototyping and model experimentation</dd></div>
+              <div class="skill-row"><dt>From Scratch (NumPy)</dt><dd>ANN with full backprop, momentum SGD, L2 regularization</dd></div>
+              <div class="skill-row"><dt>Transfer Learning</dt><dd>Fine-tuning pre-trained models for domain-specific tasks</dd></div>
+            </dl>
           </div>
         </div>
 
-        <h3 style="margin-bottom:var(--sp-6); color:var(--t-high);" class="reveal">Featured Projects</h3>
-        <div class="projects-grid projects-grid-3 stagger">
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-dl-1.jpg" alt="Denoising Autoencoder" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">Deep Learning</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Denoising Autoencoder</h4>
-              <p class="proj-desc">CNN autoencoder removing Gaussian noise from MNIST images, learning robust latent representations.</p>
-              <div class="proj-footer"><div class="proj-tags"><span class="tag">Keras</span><span class="tag">CNN</span></div></div>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-dl-2.jpg" alt="ANN from Scratch" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">From Scratch</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">ANN from Scratch</h4>
-              <p class="proj-desc">Custom ANN using only NumPy — full backpropagation, momentum SGD, L2 regularization. Achieved 18% error reduction.</p>
-              <div class="proj-footer"><div class="proj-tags"><span class="tag">NumPy</span><span class="tag">Python</span></div></div>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-dl-3.jpg" alt="ECG Anomaly Detection" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">Deep Learning</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">ECG Anomaly Detection</h4>
-              <p class="proj-desc">Unsupervised anomaly detection on ECG5000 dataset using LSTM autoencoder with MAE thresholding.</p>
-              <div class="proj-footer"><div class="proj-tags"><span class="tag">TensorFlow</span><span class="tag">LSTM</span></div></div>
-            </div>
-          </article>
+        <h3 class="col-title">Selected Projects</h3>
+        <ol class="proj-list">
+          <li class="proj-row" data-img="project-dl-1.jpg" data-caption="Denoising Autoencoder">
+            <span class="proj-num">No. 01</span>
+            <h4 class="proj-title">Denoising Autoencoder <em>CNN</em></h4>
+            <span class="proj-tags">Keras · CNN · MNIST</span>
+            <span class="proj-link">View →</span>
+          </li>
+          <li class="proj-row" data-img="project-dl-2.jpg" data-caption="ANN from Scratch">
+            <span class="proj-num">No. 02</span>
+            <h4 class="proj-title">ANN from Scratch <em>NumPy</em></h4>
+            <span class="proj-tags">NumPy · Backprop · SGD</span>
+            <span class="proj-link">View →</span>
+          </li>
+          <li class="proj-row" data-img="project-dl-3.jpg" data-caption="ECG Anomaly Detection">
+            <span class="proj-num">No. 03</span>
+            <h4 class="proj-title">ECG Anomaly Detection <em>LSTM</em></h4>
+            <span class="proj-tags">TensorFlow · LSTM · Autoencoder</span>
+            <span class="proj-link">View →</span>
+          </li>
+        </ol>
+
+        <div class="spread-cta">
+          <a href="RoshanBabu.pdf" class="ed-link" download>Download DL Resume ↓</a>
         </div>
-        <div class="section-cta reveal">
-          <a href="RoshanBabu.pdf" class="btn btn-outline" download>Download DL Resume</a>
-        </div>
+
       </div>
     </section>
 
-    <!-- ══════════════════ REINFORCEMENT LEARNING ══════════════════ -->
-    <section id="rl" class="section section-alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge">04 — Reinforcement Learning</span>
-          <h2 class="section-title">Learning Through<br>Interaction</h2>
-          <p class="section-sub">Implementing classic RL algorithms from value iteration to Monte Carlo methods</p>
-        </div>
+    <!-- Marquee 5 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Neural · Architectures</span>
+        <span>Neural · Architectures</span>
+        <span>Neural · Architectures</span>
+        <span>Neural · Architectures</span>
+      </div>
+    </div>
 
-        <div class="dual-grid">
-          <div class="sub-card reveal">
-            <h3>Algorithms &amp; Methods</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <span class="sk-name">Value Iteration</span>
-                <p class="sk-det">Dynamic programming for optimal policy computation in MDPs</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">Monte Carlo Methods</span>
-                <p class="sk-det">First-visit &amp; every-visit MC prediction, MC control</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">Policy Evaluation</span>
-                <p class="sk-det">Value functions for stochastic policies, Bellman equations</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">Environment Design</span>
-                <p class="sk-det">OpenAI Gym environments, custom gridworld MDPs</p>
-              </div>
-            </div>
+    <!-- ════════════════ REINFORCEMENT LEARNING ════════════════ -->
+    <section id="rl" class="spread light-block">
+      <div class="spread-numeral" aria-hidden="true">04</div>
+      <div class="container spread-content">
+
+        <header class="spread-head">
+          <span class="spread-kicker">Section No. 04</span>
+          <h2 class="spread-title">Reinforcement<br><em>Learning.</em></h2>
+          <p class="spread-sub">Implementing classic RL algorithms — from value iteration to Monte Carlo methods.</p>
+        </header>
+
+        <div class="spread-cols">
+          <div>
+            <h3 class="col-title">Algorithms</h3>
+            <dl class="skill-list">
+              <div class="skill-row"><dt>Value Iteration</dt><dd>Dynamic programming for optimal policy computation in MDPs</dd></div>
+              <div class="skill-row"><dt>Monte Carlo</dt><dd>First-visit &amp; every-visit MC prediction, MC control</dd></div>
+              <div class="skill-row"><dt>Policy Evaluation</dt><dd>Value functions for stochastic policies, Bellman equations</dd></div>
+              <div class="skill-row"><dt>Environment Design</dt><dd>OpenAI Gym, custom gridworld MDPs</dd></div>
+            </dl>
           </div>
-          <div class="sub-card reveal">
-            <h3>Tools &amp; Concepts</h3>
-            <div class="skill-items">
-              <div class="skill-item">
-                <span class="sk-name">OpenAI Gym</span>
-                <p class="sk-det">FrozenLake, Blackjack, CartPole environments</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">MDP Framework</span>
-                <p class="sk-det">States, actions, rewards, transition probabilities</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">NumPy Implementations</span>
-                <p class="sk-det">Pure numpy RL implementations for deep understanding</p>
-              </div>
-              <div class="skill-item">
-                <span class="sk-name">Policy vs Value Methods</span>
-                <p class="sk-det">Comparison of model-based and model-free approaches</p>
-              </div>
-            </div>
+          <div>
+            <h3 class="col-title">Tools</h3>
+            <dl class="skill-list">
+              <div class="skill-row"><dt>OpenAI Gym</dt><dd>FrozenLake, Blackjack, CartPole environments</dd></div>
+              <div class="skill-row"><dt>MDP Framework</dt><dd>States, actions, rewards, transition probabilities</dd></div>
+              <div class="skill-row"><dt>NumPy Implementations</dt><dd>Pure numpy RL implementations for deep understanding</dd></div>
+              <div class="skill-row"><dt>Policy vs Value</dt><dd>Comparison of model-based and model-free approaches</dd></div>
+            </dl>
           </div>
         </div>
 
-        <h3 style="margin-bottom:var(--sp-6); color:var(--t-high);" class="reveal">RL Projects</h3>
-        <div class="projects-grid projects-grid-3 stagger">
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-rl-1.jpg" alt="Frozen Lake Value Iteration" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">RL Project</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Frozen Lake — Value Iteration</h4>
-              <p class="proj-desc">Solved the FrozenLake environment using dynamic programming value iteration, computing the optimal deterministic policy.</p>
-              <div class="proj-footer">
-                <div class="proj-tags"><span class="tag">OpenAI Gym</span><span class="tag">NumPy</span><span class="tag">DP</span></div>
-                <a href="https://formspree.io/f/xnjwpvaw" class="proj-github" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-rl-1.jpg" alt="Blackjack Monte Carlo" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">RL Project</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Blackjack — Monte Carlo Prediction</h4>
-              <p class="proj-desc">Applied Monte Carlo policy evaluation on the Blackjack environment to estimate state-value functions through sampled episodes.</p>
-              <div class="proj-footer">
-                <div class="proj-tags"><span class="tag">Monte Carlo</span><span class="tag">NumPy</span><span class="tag">Gym</span></div>
-                <a href="https://github.com/roshan5619/blackjack-monte-carlo" class="proj-github" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-rl-1.jpg" alt="Stochastic Policy Value Function" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">RL Project</span></div>
-            </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Value Function — Stochastic Policy</h4>
-              <p class="proj-desc">Derived and implemented value functions for stochastic policies using iterative policy evaluation and Bellman expectation equations.</p>
-              <div class="proj-footer">
-                <div class="proj-tags"><span class="tag">Policy Eval</span><span class="tag">Bellman</span><span class="tag">NumPy</span></div>
-                <a href="https://github.com/roshan5619/stochastic-policy-value-function" class="proj-github" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </article>
+        <h3 class="col-title">Selected Projects</h3>
+        <ol class="proj-list">
+          <li class="proj-row" data-img="project-rl-1.jpg" data-caption="Frozen Lake — Value Iteration">
+            <span class="proj-num">No. 01</span>
+            <h4 class="proj-title">Frozen Lake — Value Iteration <em>DP</em></h4>
+            <span class="proj-tags">OpenAI Gym · NumPy</span>
+            <a class="proj-link" href="https://github.com/roshan5619/frozen-lake-value-iteration" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on GitHub →</a>
+          </li>
+          <li class="proj-row" data-img="project-rl-1.jpg" data-caption="Blackjack — Monte Carlo">
+            <span class="proj-num">No. 02</span>
+            <h4 class="proj-title">Blackjack — Monte Carlo Prediction <em>MC</em></h4>
+            <span class="proj-tags">Monte Carlo · NumPy</span>
+            <a class="proj-link" href="https://github.com/roshan5619/blackjack-monte-carlo" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on GitHub →</a>
+          </li>
+          <li class="proj-row" data-img="project-rl-1.jpg" data-caption="Stochastic Policy Value Function">
+            <span class="proj-num">No. 03</span>
+            <h4 class="proj-title">Value Function — Stochastic Policy <em>Bellman</em></h4>
+            <span class="proj-tags">Policy Eval · Bellman · NumPy</span>
+            <a class="proj-link" href="https://github.com/roshan5619/stochastic-policy-value-function" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on GitHub →</a>
+          </li>
+          <li class="proj-row" data-img="project-rl-1.jpg" data-caption="MC Predictions and Types">
+            <span class="proj-num">No. 04</span>
+            <h4 class="proj-title">MC Predictions &amp; Its Types <em>study</em></h4>
+            <span class="proj-tags">First-visit · Every-visit · NumPy</span>
+            <a class="proj-link" href="https://github.com/roshan5619/mc-predictions" target="_blank" rel="noopener" onclick="event.stopPropagation()">View on GitHub →</a>
+          </li>
+        </ol>
+
+        <div class="spread-cta">
+          <a href="RoshanBabu_DS.pdf" class="ed-link" download>Download DS/RL Resume ↓</a>
         </div>
-        <div class="more-projects reveal" style="margin-top:var(--sp-6);">
-          <h4>More RL Work</h4>
-          <ul class="more-list">
-            <li><strong>MC Predictions and Its Types</strong> — Comparative study of First-visit vs Every-visit Monte Carlo prediction methods with visualizations</li>
-          </ul>
-        </div>
-        <div class="section-cta reveal">
-          <a href="RoshanBabu_DS.pdf" class="btn btn-outline" download>Download DS/RL Resume</a>
-        </div>
+
       </div>
     </section>
 
-    <!-- ══════════════════ QUANTUM ══════════════════ -->
-    <section id="quantum" class="section">
-      <div class="qorb qorb-1" aria-hidden="true"></div>
-      <div class="qorb qorb-2" aria-hidden="true"></div>
-      <div class="qorb qorb-3" aria-hidden="true"></div>
-      <div class="orbit-ring" aria-hidden="true"></div>
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge">05 — Quantum Computing &amp; QML</span>
-          <h2 class="section-title">Quantum Machine<br>Learning</h2>
-          <p class="section-sub">Qiskit Advocate 2025 · Presenter at Supercomputing India 2025 (C-DAC / MEITY) · Pioneering hybrid quantum-classical systems</p>
-        </div>
+    <!-- Marquee 6 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Learn through interaction.</span>
+        <span>Learn through interaction.</span>
+        <span>Learn through interaction.</span>
+      </div>
+    </div>
 
-        <div class="q-hero-badge reveal">
-          <div class="qbadge-icon">⚛️</div>
-          <div class="qbadge-text">
+    <!-- ════════════════ QUANTUM ════════════════ -->
+    <section id="quantum" class="spread">
+      <div class="spread-numeral" aria-hidden="true">05</div>
+      <div class="container spread-content">
+
+        <header class="spread-head">
+          <span class="spread-kicker">Section No. 05 · The Cover Story</span>
+          <h2 class="spread-title">Quantum Machine<br><em>Learning.</em></h2>
+          <p class="spread-sub">Qiskit Advocate 2025 · Presenter at Supercomputing India 2025 (C-DAC / MEITY) · Pioneering hybrid quantum-classical systems.</p>
+        </header>
+
+        <div class="q-badge">
+          <div class="q-badge-icon">⚛</div>
+          <div class="q-badge-text">
             <h3>IBM Qiskit Advocate 2025</h3>
             <p>Selected for the prestigious IBM Qiskit Advocate Program — recognized for outstanding contributions to the quantum computing community through research, education, and open-source collaboration.</p>
           </div>
         </div>
 
-        <div class="dual-grid">
-          <div class="sub-card reveal">
-            <h3>Quantum Machine Learning</h3>
-            <div class="skill-items">
-              <div class="skill-item"><span class="sk-name">Variational Quantum Circuits</span><p class="sk-det">VQCs for classification and optimization tasks</p></div>
-              <div class="skill-item"><span class="sk-name">Quantum Neural Networks</span><p class="sk-det">QCNN architectures, hybrid classical-quantum layers</p></div>
-              <div class="skill-item"><span class="sk-name">Quantum Kernels</span><p class="sk-det">QSVM, quantum-enhanced feature spaces</p></div>
-              <div class="skill-item"><span class="sk-name">IBM Quantum Hardware</span><p class="sk-det">QASM Simulator, real quantum hardware execution</p></div>
-            </div>
+        <div class="spread-cols">
+          <div>
+            <h3 class="col-title">Quantum Machine Learning</h3>
+            <dl class="skill-list">
+              <div class="skill-row"><dt>Variational Circuits</dt><dd>VQCs for classification and optimization tasks</dd></div>
+              <div class="skill-row"><dt>Quantum Neural Nets</dt><dd>QCNN architectures, hybrid classical-quantum layers</dd></div>
+              <div class="skill-row"><dt>Quantum Kernels</dt><dd>QSVM, quantum-enhanced feature spaces</dd></div>
+              <div class="skill-row"><dt>IBM Quantum Hardware</dt><dd>QASM Simulator, real quantum hardware execution</dd></div>
+            </dl>
           </div>
-          <div class="sub-card reveal">
-            <h3>Fundamentals &amp; Algorithms</h3>
-            <div class="skill-items">
-              <div class="skill-item"><span class="sk-name">Qiskit Framework</span><p class="sk-det">Circuit design, quantum gates, measurements, transpilation</p></div>
-              <div class="skill-item"><span class="sk-name">Quantum Algorithms</span><p class="sk-det">Grover's search, oracle circuits, amplitude amplification</p></div>
-              <div class="skill-item"><span class="sk-name">Hybrid Pipelines</span><p class="sk-det">Seamless classical-quantum integration with PyTorch</p></div>
-              <div class="skill-item"><span class="sk-name">Quantum Information</span><p class="sk-det">Qubits, entanglement, superposition, quantum noise</p></div>
-            </div>
-          </div>
-        </div>
-
-        <h3 style="margin-bottom:var(--sp-6); color:var(--t-high);" class="reveal">Quantum Certifications</h3>
-        <div class="cert-grid stagger">
-          <div class="cert-card reveal">
-            <div class="cert-icon">🎓</div>
-            <div>
-              <div class="cert-name">AICTE FDP — Quantum Computation</div>
-              <a href="https://www.linkedin.com/posts/roshan-babu-59602a236_quantum-computation-activity-7359151517955776513-_swX" class="cert-view" target="_blank" rel="noopener">
-                View Certificate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="cert-card reveal">
-            <div class="cert-icon">🏅</div>
-            <div>
-              <div class="cert-name">IBM — Quantum Machine Learning</div>
-              <a href="https://www.credly.com/badges/d5ae9145-a97a-4771-81d8-01010f53c53f/public_url" class="cert-view" target="_blank" rel="noopener">
-                View Badge <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="cert-card reveal">
-            <div class="cert-icon">🏅</div>
-            <div>
-              <div class="cert-name">IBM — Basics of Quantum Information</div>
-              <a href="https://www.credly.com/badges/47687486-1598-4208-85b1-43e64877132b/public_url" class="cert-view" target="_blank" rel="noopener">
-                View Badge <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="cert-card reveal">
-            <div class="cert-icon">🏅</div>
-            <div>
-              <div class="cert-name">IBM — Fundamentals of Quantum Algorithms</div>
-              <a href="https://www.credly.com/badges/410863e7-eb92-48b4-957e-ee2dc664fc65/public_url" class="cert-view" target="_blank" rel="noopener">
-                View Badge <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
+          <div>
+            <h3 class="col-title">Fundamentals</h3>
+            <dl class="skill-list">
+              <div class="skill-row"><dt>Qiskit Framework</dt><dd>Circuit design, quantum gates, measurements, transpilation</dd></div>
+              <div class="skill-row"><dt>Quantum Algorithms</dt><dd>Grover's search, oracle circuits, amplitude amplification</dd></div>
+              <div class="skill-row"><dt>Hybrid Pipelines</dt><dd>Seamless classical-quantum integration with PyTorch</dd></div>
+              <div class="skill-row"><dt>Quantum Information</dt><dd>Qubits, entanglement, superposition, quantum noise</dd></div>
+            </dl>
           </div>
         </div>
 
-        <h3 style="margin-bottom:var(--sp-6); color:var(--t-high); margin-top:var(--sp-12);" class="reveal">Featured Projects</h3>
-        <div class="projects-grid stagger">
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-qml-1.jpg" alt="Quantum Facial Biometric System" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">Research</span></div>
+        <h3 class="col-title">Certifications</h3>
+        <div class="cert-grid">
+          <div class="cert-row">
+            <div>
+              <div class="cert-name">Quantum Computation</div>
+              <div class="cert-issuer">AICTE Faculty Development Program</div>
             </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Quantum Facial Biometric System</h4>
-              <p class="proj-desc">Groundbreaking research integrating Computer Vision with QML — VQC feature extraction fused with classical CNNs for enhanced facial recognition at Lloyd's Bank.</p>
-              <div class="proj-footer"><div class="proj-tags"><span class="tag">Qiskit</span><span class="tag">PyTorch</span><span class="tag">VQC</span><span class="tag">OpenCV</span></div></div>
+            <a href="https://www.linkedin.com/posts/roshan-babu-59602a236_quantum-computation-activity-7359151517955776513-_swX" class="cert-link" target="_blank" rel="noopener">View certificate →</a>
+          </div>
+          <div class="cert-row">
+            <div>
+              <div class="cert-name">Quantum Machine Learning</div>
+              <div class="cert-issuer">IBM (Credly)</div>
             </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="proj-img-wrap">
-              <img src="project-qml-2.jpg" alt="Oracle Circuit and Grover's Algorithm" class="proj-img" loading="lazy">
-              <div class="proj-overlay"><span class="proj-type">Quantum Algorithm</span></div>
+            <a href="https://www.credly.com/badges/d5ae9145-a97a-4771-81d8-01010f53c53f/public_url" class="cert-link" target="_blank" rel="noopener">View badge →</a>
+          </div>
+          <div class="cert-row">
+            <div>
+              <div class="cert-name">Basics of Quantum Information</div>
+              <div class="cert-issuer">IBM (Credly)</div>
             </div>
-            <div class="proj-body">
-              <h4 class="proj-title">Oracle Circuit &amp; Grover's Algorithm</h4>
-              <p class="proj-desc">Implemented quantum oracle circuits enabling efficient Grover's search with quadratic speedup over classical search algorithms.</p>
-              <div class="proj-footer"><div class="proj-tags"><span class="tag">Qiskit</span><span class="tag">QASM</span><span class="tag">IBM Q</span></div></div>
+            <a href="https://www.credly.com/badges/47687486-1598-4208-85b1-43e64877132b/public_url" class="cert-link" target="_blank" rel="noopener">View badge →</a>
+          </div>
+          <div class="cert-row">
+            <div>
+              <div class="cert-name">Fundamentals of Quantum Algorithms</div>
+              <div class="cert-issuer">IBM (Credly)</div>
             </div>
-          </article>
+            <a href="https://www.credly.com/badges/410863e7-eb92-48b4-957e-ee2dc664fc65/public_url" class="cert-link" target="_blank" rel="noopener">View badge →</a>
+          </div>
         </div>
-        <div class="section-cta reveal">
-          <a href="RoshanBabu_Quantum.pdf" class="btn btn-outline" download>Download Quantum Resume</a>
+
+        <h3 class="col-title" style="margin-top:64px;">Selected Projects</h3>
+        <ol class="proj-list">
+          <li class="proj-row" data-img="project-qml-1.jpg" data-caption="Quantum Facial Biometric System">
+            <span class="proj-num">No. 01</span>
+            <h4 class="proj-title">Quantum Facial Biometric System <em>research</em></h4>
+            <span class="proj-tags">Qiskit · PyTorch · VQC · OpenCV</span>
+            <span class="proj-link">View →</span>
+          </li>
+          <li class="proj-row" data-img="project-qml-2.jpg" data-caption="Oracle Circuit · Grover's Algorithm">
+            <span class="proj-num">No. 02</span>
+            <h4 class="proj-title">Oracle Circuit &amp; Grover's Algorithm <em>algorithm</em></h4>
+            <span class="proj-tags">Qiskit · QASM · IBM Q</span>
+            <span class="proj-link">View →</span>
+          </li>
+        </ol>
+
+        <div class="spread-cta">
+          <a href="RoshanBabu_Quantum.pdf" class="ed-link" download>Download Quantum Resume ↓</a>
         </div>
+
       </div>
     </section>
 
-    <!-- ══════════════════ ACHIEVEMENTS ══════════════════ -->
-    <section id="achievements" class="section section-alt">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge">06 — Achievements</span>
-          <h2 class="section-title">Recognition &amp; Leadership</h2>
-          <p class="section-sub">Excellence in research, international sports, community leadership, and creative arts</p>
-        </div>
+    <!-- Marquee 7 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>⚛ Qiskit Advocate 2025 ⚛</span>
+        <span>⚛ Qiskit Advocate 2025 ⚛</span>
+        <span>⚛ Qiskit Advocate 2025 ⚛</span>
+        <span>⚛ Qiskit Advocate 2025 ⚛</span>
+      </div>
+    </div>
 
-        <!-- Research & Technical -->
-        <div class="achiev-cat">
-          <div class="achiev-cat-title reveal">
-            <span>🔬</span> Research &amp; Technical Excellence
-          </div>
-          <div class="achiev-grid stagger">
-            <div class="achiev-card feat reveal">
-              <div class="achiev-emoji">⚛️</div>
-              <h4>IBM Qiskit Advocate 2025</h4>
-              <p>Selected for the prestigious IBM Qiskit Advocate Program — recognized globally for contributions to quantum computing research and community</p>
-            </div>
-            <div class="achiev-card reveal">
-              <div class="achiev-emoji">📄</div>
-              <h4>Published Researcher</h4>
-              <p>Published paper <em>"Inventory Management using AI"</em> at ICIET International Conference</p>
-            </div>
-            <div class="achiev-card reveal">
-              <div class="achiev-emoji">🧬</div>
-              <h4>Quantum Biometrics Pioneer</h4>
-              <p>Developing the world's first Quantum-Classical Facial Biometric System at Lloyd's Bank Research. Presented findings at <strong>Supercomputing India 2025</strong></p>
-            </div>
-            <div class="achiev-card reveal">
-              <div class="achiev-emoji">💻</div>
-              <h4>Google Code Vipasana 2025</h4>
-              <p>Participated in prestigious Google-sponsored coding competition, demonstrating competitive programming excellence</p>
-            </div>
-            <div class="achiev-card feat reveal">
-              <div class="achiev-emoji">🖥️</div>
-              <h4>Supercomputing India 2025 — Poster Presenter</h4>
-              <p>Presented poster <em>"Development of Hybrid Quantum Machine Learning Methods for Facial Bio-metrics"</em> at <strong>SCI2025</strong>, organized by C-DAC &amp; Ministry of Electronics &amp; IT, at MIT Bengaluru (Dec 9–13, 2025)</p>
-            </div>
-          </div>
-        </div>
+    <!-- ════════════════ ACHIEVEMENTS ════════════════ -->
+    <section id="achievements" class="spread">
+      <div class="spread-numeral" aria-hidden="true">06</div>
+      <div class="container spread-content">
 
-        <!-- Leadership & Community -->
+        <header class="spread-head">
+          <span class="spread-kicker">Section No. 06</span>
+          <h2 class="spread-title">Recognition<br><em>&amp; Leadership.</em></h2>
+          <p class="spread-sub">Excellence in research, international sports, community leadership, and creative arts.</p>
+        </header>
+
         <div class="achiev-cat">
-          <div class="achiev-cat-title reveal">
-            <span>🎯</span> Leadership &amp; Community
+          <div class="achiev-cat-head">
+            <span class="achiev-cat-num">i.</span>
+            <h3 class="achiev-cat-title">Research &amp; Technical Excellence</h3>
           </div>
-          <div class="achiev-grid stagger">
-            <div class="achiev-card feat reveal">
-              <div class="achiev-emoji">🤖</div>
-              <h4>Perplexity Campus Ambassador</h4>
-              <p>Promoting AI literacy, organizing workshops, and driving adoption of AI tools across the student community at Mahindra University</p>
+          <div class="achiev-grid">
+            <div class="achiev-row featured">
+              <span class="achiev-tag">Honour</span>
+              <h4 class="achiev-name"><em>IBM Qiskit Advocate 2025</em></h4>
+              <p class="achiev-desc">Selected for the prestigious IBM Qiskit Advocate Program — recognized globally for contributions to quantum computing research and community.</p>
             </div>
-            <div class="achiev-card reveal">
-              <div class="achiev-emoji">🏐</div>
-              <h4>University Throwball Club Captain</h4>
-              <p>Captain and Incharge of Mahindra University Throwball Club — leading team strategy, training, and player development</p>
+            <div class="achiev-row">
+              <span class="achiev-tag">Publication</span>
+              <h4 class="achiev-name">Published Researcher</h4>
+              <p class="achiev-desc">Published paper <em>"Inventory Management using AI"</em> at ICIET International Conference.</p>
             </div>
-            <div class="achiev-card reveal">
-              <div class="achiev-emoji">🏆</div>
-              <h4>Merit Scholarship Recipient</h4>
-              <p>Awarded merit-based scholarship for outstanding academic performance in the M.Tech AI &amp; Data Science program</p>
+            <div class="achiev-row">
+              <span class="achiev-tag">Research</span>
+              <h4 class="achiev-name">Quantum Biometrics Pioneer</h4>
+              <p class="achiev-desc">Developing the world's first Quantum-Classical Facial Biometric System at Lloyd's Bank Research, Mahindra University.</p>
             </div>
-            <div class="achiev-card reveal">
-              <div class="achiev-emoji">📢</div>
-              <h4>Quantum Workshop Conductor</h4>
-              <p>Organized and led sessions educating peers on leveraging Quantum Computing for research, covering Qiskit and QML fundamentals</p>
+            <div class="achiev-row featured">
+              <span class="achiev-tag">Conference</span>
+              <h4 class="achiev-name"><em>Supercomputing India 2025 — Poster Presenter</em></h4>
+              <p class="achiev-desc">Presented poster <em>"Development of Hybrid Quantum Machine Learning Methods for Facial Bio-metrics"</em> at <strong>SCI2025</strong>, organized by C-DAC &amp; Ministry of Electronics &amp; IT, at MIT Bengaluru (Dec 9–13, 2025).</p>
+            </div>
+            <div class="achiev-row">
+              <span class="achiev-tag">Competition</span>
+              <h4 class="achiev-name">Google Code Vipasana 2025</h4>
+              <p class="achiev-desc">Participated in prestigious Google-sponsored coding competition, demonstrating competitive programming excellence.</p>
             </div>
           </div>
         </div>
 
-        <!-- Sports & Creative -->
         <div class="achiev-cat">
-          <div class="achiev-cat-title reveal">
-            <span>🏆</span> International Sports &amp; Creative Arts
+          <div class="achiev-cat-head">
+            <span class="achiev-cat-num">ii.</span>
+            <h3 class="achiev-cat-title">Leadership &amp; Community</h3>
           </div>
-          <div class="achiev-grid stagger">
-            <div class="achiev-card sport feat reveal">
-              <div class="achiev-emoji">🇮🇳</div>
-              <h4>Indian National Throwball Team</h4>
-              <p>Represented India in Men's Throwball at the <strong>Indo-Sri Lanka Youth Cup 2024</strong> — achieved Runner-up position at the international level</p>
+          <div class="achiev-grid">
+            <div class="achiev-row featured">
+              <span class="achiev-tag">Ambassador</span>
+              <h4 class="achiev-name"><em>Perplexity Campus Ambassador</em></h4>
+              <p class="achiev-desc">Promoting AI literacy, organizing workshops, and driving adoption of AI tools across the student community at Mahindra University.</p>
             </div>
-            <div class="achiev-card reveal">
-              <div class="achiev-emoji">🎬</div>
-              <h4>Director of Photography</h4>
-              <p>Served as DOP in a regional short film competition — showcasing creative versatility and storytelling skills beyond technology</p>
+            <div class="achiev-row">
+              <span class="achiev-tag">Captain</span>
+              <h4 class="achiev-name">Throwball Club Captain</h4>
+              <p class="achiev-desc">Captain &amp; Incharge of Mahindra University Throwball Club — leading team strategy, training, and player development.</p>
+            </div>
+            <div class="achiev-row">
+              <span class="achiev-tag">Scholarship</span>
+              <h4 class="achiev-name">Merit Scholarship Recipient</h4>
+              <p class="achiev-desc">Awarded merit-based scholarship for outstanding academic performance in the M.Tech AI &amp; Data Science program.</p>
+            </div>
+            <div class="achiev-row">
+              <span class="achiev-tag">Workshop</span>
+              <h4 class="achiev-name">Quantum Workshop Conductor</h4>
+              <p class="achiev-desc">Organized and led sessions educating peers on leveraging Quantum Computing for research, covering Qiskit and QML fundamentals.</p>
             </div>
           </div>
         </div>
+
+        <div class="achiev-cat">
+          <div class="achiev-cat-head">
+            <span class="achiev-cat-num">iii.</span>
+            <h3 class="achiev-cat-title">Sports &amp; Creative Arts</h3>
+          </div>
+          <div class="achiev-grid">
+            <div class="achiev-row featured">
+              <span class="achiev-tag">International</span>
+              <h4 class="achiev-name"><em>Indian National Throwball Team</em></h4>
+              <p class="achiev-desc">Represented India in Men's Throwball at the <strong>Indo-Sri Lanka Youth Cup 2024</strong> — achieved Runner-up position at the international level.</p>
+            </div>
+            <div class="achiev-row">
+              <span class="achiev-tag">Film</span>
+              <h4 class="achiev-name">Director of Photography</h4>
+              <p class="achiev-desc">Served as DOP in a regional short film competition — showcasing creative versatility and storytelling skills beyond technology.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- ══════════════════ CONTACT ══════════════════ -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-badge">07 — Contact</span>
-          <h2 class="section-title">Let's Build Something</h2>
-          <p class="section-sub">Open to research collaborations, internships, and exciting AI projects</p>
-        </div>
-        <div class="contact-grid">
-          <div class="reveal">
-            <p class="contact-lead">
-              Whether you're working on quantum computing, deep learning, or building the next generation of AI systems — I'd love to connect and explore how we can create something impactful together.
-            </p>
-            <div class="social-grid">
-              <a href="https://github.com/roshan5619" class="social-card" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                <div>
-                  <span>GitHub</span>
-                  <span class="social-sub">github.com/roshan5619</span>
-                </div>
-              </a>
-              <a href="https://www.linkedin.com/in/roshan-babu-59602a236/" class="social-card" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                <div>
-                  <span>LinkedIn</span>
-                  <span class="social-sub">Connect with me</span>
-                </div>
-              </a>
-              <a href="mailto:broshann14@gmail.com" class="social-card">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                <div>
-                  <span>Email</span>
-                  <span class="social-sub">broshann14@gmail.com</span>
-                </div>
-              </a>
-              <a href="tel:+916301607295" class="social-card">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.09.57.32 1.3.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c1.51.38 2.24.61 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                <div>
-                  <span>Phone</span>
-                  <span class="social-sub">+91 6301607295</span>
-                </div>
-              </a>
+    <!-- Marquee 8 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>FIN · FIN · FIN</span>
+        <span>FIN · FIN · FIN</span>
+        <span>FIN · FIN · FIN</span>
+        <span>FIN · FIN · FIN</span>
+      </div>
+    </div>
+
+    <!-- ════════════════ CONTACT / LETTERS ════════════════ -->
+    <section id="contact" class="spread">
+      <div class="container spread-content">
+
+        <header class="spread-head">
+          <span class="spread-kicker">Letters to the Editor</span>
+          <h2 class="spread-title">Let's build<br><em>something.</em></h2>
+        </header>
+
+        <div class="letters-grid">
+          <div>
+            <p class="contact-lead">Open to <em>research collaborations</em>, internships, and exciting AI projects. Whether quantum computing, deep learning, or the next generation of AI systems — I'd love to connect.</p>
+            <div class="contact-info">
+              <div class="contact-row">
+                <span class="label">Email</span>
+                <a class="value" href="mailto:broshann14@gmail.com">broshann14@gmail.com</a>
+              </div>
+              <div class="contact-row">
+                <span class="label">Phone</span>
+                <a class="value" href="tel:+916301607295">+91 6301607295</a>
+              </div>
+              <div class="contact-row">
+                <span class="label">GitHub</span>
+                <a class="value" href="https://github.com/roshan5619" target="_blank" rel="noopener">github.com/roshan5619</a>
+              </div>
+              <div class="contact-row">
+                <span class="label">LinkedIn</span>
+                <a class="value" href="https://www.linkedin.com/in/roshan-babu-59602a236/" target="_blank" rel="noopener">linkedin.com/in/roshan-babu</a>
+              </div>
             </div>
           </div>
-          <div class="reveal">
-            <!-- Replace YOUR_FORM_ID after signing up at formspree.io -->
-            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-              <div class="form-group">
-                <label for="cf-name">Name</label>
-                <input type="text" id="cf-name" name="name" placeholder="Your name" required>
-              </div>
-              <div class="form-group">
-                <label for="cf-email">Email</label>
-                <input type="email" id="cf-email" name="email" placeholder="your@email.com" required>
-              </div>
-              <div class="form-group">
-                <label for="cf-subject">Subject</label>
-                <input type="text" id="cf-subject" name="subject" placeholder="Research collaboration, internship...">
-              </div>
-              <div class="form-group">
-                <label for="cf-msg">Message</label>
-                <textarea id="cf-msg" name="message" placeholder="Tell me about your project or idea..." required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                Send Message
-              </button>
-            </form>
-          </div>
+
+          <form class="letter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="letter-row">
+              <label for="cf-name">From</label>
+              <input id="cf-name" name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="letter-row">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" placeholder="your@email.com" required>
+            </div>
+            <div class="letter-row">
+              <label for="cf-subject">Subject</label>
+              <input id="cf-subject" name="subject" type="text" placeholder="Research collaboration, internship…">
+            </div>
+            <div class="letter-row">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" name="message" placeholder="Tell me about your project or idea…" required></textarea>
+            </div>
+            <div class="letter-submit">
+              <button type="submit" class="btn-letter">Send Letter</button>
+            </div>
+          </form>
         </div>
+
+        <div class="contact-flourish">— fin —</div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
+  <!-- ════════════════ COLOPHON / FOOTER ════════════════ -->
+  <footer class="colophon" role="contentinfo">
     <div class="container">
-      <div class="footer-main">
-        <div>
-          <div class="footer-brand-name">Bandlapalli Roshan Babu</div>
-          <p class="footer-tagline">M.Tech AI &amp; Data Science · Mahindra University · Hyderabad</p>
-        </div>
-        <div class="footer-cols">
-          <div class="footer-col">
-            <h4>Navigate</h4>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#ai-ml">AI/ML</a></li>
-              <li><a href="#nlp">NLP</a></li>
-              <li><a href="#dl">Deep Learning</a></li>
-              <li><a href="#rl">RL</a></li>
-              <li><a href="#quantum">Quantum</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Connect</h4>
-            <ul>
-              <li><a href="https://github.com/roshan5619" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/roshan-babu-59602a236/" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="mailto:broshann14@gmail.com">Email</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Resumes</h4>
-            <ul>
-              <li><a href="RoshanBabu_CV.pdf" download>Full CV</a></li>
-              <li><a href="RoshanBabu_AI.pdf" download>AI/ML</a></li>
-              <li><a href="RoshanBabu_MlNLP.pdf" download>NLP</a></li>
-              <li><a href="RoshanBabu_Quantum.pdf" download>Quantum</a></li>
-              <li><a href="RoshanBabu_DS.pdf" download>DS/RL</a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="colophon-rule"></div>
+      <div class="colophon-row">
+        <div class="colophon-brand">Roshan Babu. — Vol 01 / 2025</div>
+        <div class="colophon-meta">© 2025 Bandlapalli Roshan Babu · All work, all rights reserved.</div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-copy">© 2025 Bandlapalli Roshan Babu. All rights reserved.</p>
-        <p class="footer-built">Qiskit Advocate · Perplexity Ambassador · AI Researcher</p>
-      </div>
+      <p class="colophon-fin">—</p>
     </div>
   </footer>
 
-  <!-- Back to top -->
-  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
-  </button>
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
 
   <script>
   (function () {
-    /* ── Particle canvas ── */
-    const canvas = document.getElementById('particles');
-    const ctx = canvas.getContext('2d');
-    let W, H, dots = [];
+    /* ── Image hover reveal ── */
+    const hoverEl = document.getElementById('hover-img');
+    const hoverImg = hoverEl.querySelector('img');
+    const hoverCap = hoverEl.querySelector('figcaption');
+    let tx = 0, ty = 0, cx = 0, cy = 0;
+    let active = false;
+    const isCoarse = window.matchMedia('(pointer: coarse)').matches;
 
-    function resizeCanvas() {
-      W = canvas.width  = window.innerWidth;
-      H = canvas.height = window.innerHeight;
-    }
-    function initDots() {
-      dots = Array.from({ length: 75 }, () => ({
-        x:  Math.random() * W,
-        y:  Math.random() * H,
-        vx: (Math.random() - 0.5) * 0.22,
-        vy: (Math.random() - 0.5) * 0.22,
-        r:  Math.random() * 1.2 + 0.3,
-        a:  Math.random() * 0.35 + 0.1
-      }));
-    }
-    function animateDots() {
-      ctx.clearRect(0, 0, W, H);
-      ctx.fillStyle = '#ffffff';
-      dots.forEach(d => {
-        d.x += d.vx; d.y += d.vy;
-        if (d.x < 0) d.x = W; if (d.x > W) d.x = 0;
-        if (d.y < 0) d.y = H; if (d.y > H) d.y = 0;
-        ctx.globalAlpha = d.a;
-        ctx.beginPath();
-        ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
-        ctx.fill();
+    if (!isCoarse) {
+      document.querySelectorAll('[data-img]').forEach(row => {
+        row.addEventListener('mouseenter', () => {
+          const src = row.getAttribute('data-img');
+          const cap = row.getAttribute('data-caption') || '';
+          hoverImg.src = src;
+          hoverCap.textContent = cap;
+          hoverEl.classList.add('show');
+          active = true;
+        });
+        row.addEventListener('mouseleave', () => {
+          hoverEl.classList.remove('show');
+          active = false;
+        });
       });
-      ctx.globalAlpha = 1;
-      requestAnimationFrame(animateDots);
-    }
-    resizeCanvas(); initDots(); animateDots();
-    window.addEventListener('resize', () => { resizeCanvas(); initDots(); });
 
-    /* ── Spotlight cursor ── */
-    document.addEventListener('mousemove', e => {
-      document.body.style.setProperty('--mx', e.clientX + 'px');
-      document.body.style.setProperty('--my', e.clientY + 'px');
-    });
+      document.addEventListener('mousemove', e => {
+        tx = e.clientX + 28;
+        ty = e.clientY - 130;
+        // Keep within viewport
+        const w = 360, h = 290;
+        if (tx + w > window.innerWidth - 20) tx = e.clientX - w - 28;
+        if (ty < 20) ty = 20;
+      });
 
-    /* ── Typewriter ── */
-    const roles = ['AI Engineer', 'Quantum ML Researcher', 'NLP Specialist', 'RL Practitioner', 'Deep Learning Expert'];
-    let ri = 0, ci = 0, del = false;
-    const tw = document.getElementById('typewriter');
-    if (tw) {
-      function typeStep() {
-        const word = roles[ri];
-        if (!del) {
-          tw.textContent = word.slice(0, ++ci);
-          if (ci === word.length) { del = true; setTimeout(typeStep, 2000); return; }
-        } else {
-          tw.textContent = word.slice(0, --ci);
-          if (ci === 0) { del = false; ri = (ri + 1) % roles.length; }
-        }
-        setTimeout(typeStep, del ? 42 : 78);
+      function lerp() {
+        cx += (tx - cx) * 0.13;
+        cy += (ty - cy) * 0.13;
+        hoverEl.style.transform = `translate(${cx}px, ${cy}px)`;
+        requestAnimationFrame(lerp);
       }
-      setTimeout(typeStep, 1000);
+      lerp();
     }
 
-    /* ── Section theme tracking ── */
-    const themeMap = {
-      'home':         [6, 182, 212],
-      'about':        [20, 184, 166],
-      'ai-ml':        [6, 182, 212],
-      'nlp':          [124, 58, 237],
-      'dl':           [244, 63, 94],
-      'rl':           [245, 158, 11],
-      'quantum':      [236, 72, 153],
-      'achievements': [234, 179, 8],
-      'contact':      [6, 182, 212]
-    };
-    function setTheme(id) {
-      const [r, g, b] = themeMap[id] || [6, 182, 212];
-      const root = document.documentElement;
-      root.style.setProperty('--nav-rgb', r + ' ' + g + ' ' + b);
-      root.style.setProperty('--nav-accent', 'rgb(' + r + ',' + g + ',' + b + ')');
-      const dot = document.querySelector('.logo-dot');
-      if (dot) {
-        dot.style.background    = 'rgb(' + r + ',' + g + ',' + b + ')';
-        dot.style.boxShadow     = '0 0 10px rgb(' + r + ',' + g + ',' + b + ')';
-      }
+    /* ── Masthead invert when over dark spreads ── */
+    const masthead = document.getElementById('masthead');
+    const darkSpreads = ['ai-ml', 'nlp', 'dl', 'quantum', 'achievements', 'contact'];
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-a');
+
+    function updateMasthead() {
+      let current = '';
+      const offset = 80;
+      sections.forEach(s => {
+        const top = s.offsetTop - offset;
+        if (window.scrollY >= top) current = s.id;
+      });
+      masthead.classList.toggle('invert', darkSpreads.includes(current));
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
     }
 
-    /* ── Scroll reveal ── */
-    const revObs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          revObs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
-
-    /* ── Section tracking ── */
-    const sections  = document.querySelectorAll('.section[id]');
-    const navLinks  = document.querySelectorAll('.nav-link');
-    const secObs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          const id = e.target.id;
-          setTheme(id);
-          navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
-        }
-      });
-    }, { threshold: 0.3 });
-    sections.forEach(s => secObs.observe(s));
-
-    /* ── Header + back-to-top on scroll ── */
-    const header  = document.querySelector('.site-header');
+    /* ── Back to top + scroll listener ── */
     const backBtn = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 55);
-      backBtn.classList.toggle('visible', window.scrollY > 500);
+      backBtn.classList.toggle('show', window.scrollY > 600);
+      updateMasthead();
     }, { passive: true });
+    updateMasthead();
+    backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    /* ── Smooth nav clicks ── */
-    const navToggle    = document.getElementById('nav-toggle');
-    const navContainer = document.getElementById('nav-links');
-    const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 70;
+    /* ── Smooth nav scroll + close mobile menu ── */
+    const navList = document.getElementById('nav-list');
+    const navToggle = document.getElementById('nav-toggle');
+    const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 72;
 
     navLinks.forEach(link => {
       link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) return;
         e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) window.scrollTo({ top: target.offsetTop - navH, behavior: 'smooth' });
-        navContainer.classList.remove('active');
+        const target = document.querySelector(href);
+        if (target) window.scrollTo({ top: target.offsetTop - navH + 1, behavior: 'smooth' });
+        navList.classList.remove('active');
         navToggle.classList.remove('active');
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
+        document.body.classList.remove('menu-open');
       });
     });
 
-    /* ── Mobile nav toggle ── */
-    navToggle?.addEventListener('click', () => {
-      const open = navContainer.classList.toggle('active');
+    /* ── Mobile menu toggle ── */
+    navToggle.addEventListener('click', () => {
+      const open = navList.classList.toggle('active');
       navToggle.classList.toggle('active', open);
-      navToggle.setAttribute('aria-expanded', String(open));
-      document.body.classList.toggle('nav-open', open);
+      document.body.classList.toggle('menu-open', open);
     });
-
-    /* ── Back to top ── */
-    backBtn?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   })();
   </script>
 </body>
