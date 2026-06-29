@@ -93,7 +93,6 @@ function heroTpl(h) {
 
       <div class="hero-cta">${cta}</div>
     </div>
-    <div class="sphere" data-parallax="0.12" style="width:120px;height:120px;left:4%;bottom:6%;"></div>
   </section>`;
 }
 
@@ -166,10 +165,10 @@ function aboutTpl(a) {
       </header>
 
       <div class="spread-cols">
-        <div>
+        <div style="position:relative;">
           <p class="leadProse reveal" style="font-family:var(--ff-italic);font-style:italic;font-size:clamp(26px,3.4vw,42px);line-height:1.25;color:var(--text);margin-bottom:30px;">${esc(a.leadProse)}</p>
           <blockquote class="reveal" style="font-family:var(--ff-italic);font-style:italic;font-size:22px;color:var(--text-soft);border-left:2px solid var(--accent-soft);padding-left:22px;margin-top:30px;">${esc(a.pullQuote)}</blockquote>
-          <div class="sphere" data-parallax="-0.08" style="width:90px;height:90px;left:0;bottom:-30px;position:relative;margin-top:50px;"></div>
+          <div class="sphere" style="width:130px;height:130px;left:12px;bottom:24px;"></div>
         </div>
         <div>
           <div class="about-prose reveal">${prose}</div>

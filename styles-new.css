@@ -96,17 +96,28 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   opacity: 0.4;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
 }
-/* Floating glossy spheres */
+/* Floating glossy glass orb */
 .sphere {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
   background:
-    radial-gradient(circle at 32% 28%, rgba(255,255,255,0.85) 0%, rgba(180,200,255,0.5) 9%, var(--accent-2) 34%, #16225c 72%, #0a1130 100%);
-  box-shadow: 0 30px 80px -20px rgba(60, 90, 220, 0.55), inset -8px -10px 30px rgba(0,0,0,0.4);
-  filter: saturate(1.1);
+    radial-gradient(circle at 30% 24%, rgba(255,255,255,0.95), rgba(255,255,255,0) 16%),
+    radial-gradient(circle at 38% 32%, #aebcff 0%, #6f7fe0 26%, #36459c 55%, #1a235e 80%, #0c1338 100%);
+  box-shadow:
+    inset -12px -16px 40px rgba(4, 6, 24, 0.6),
+    inset 10px 12px 26px rgba(150, 180, 255, 0.30),
+    0 26px 70px -28px rgba(50, 70, 180, 0.7);
+  animation: float 7s ease-in-out infinite;
 }
+.sphere::after {
+  content: ""; position: absolute; left: 20%; top: 15%;
+  width: 30%; height: 20%; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.55), transparent 70%);
+  filter: blur(1.5px);
+}
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-16px); } }
 
 /* ─── 4. Masthead / Nav ────────────────────────────── */
 .masthead {
@@ -548,6 +559,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .proj-row { grid-template-columns: 1fr; gap: 8px; }
   .proj-row .proj-link { justify-self: start; }
   .hover-img { display: none; }
+  .sphere { display: none; }
 }
 @media (max-width: 480px) {
   body { font-size: 16px; }
