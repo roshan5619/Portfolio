@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Content Studio — Roshan Babu Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <span class="dot"></span>
+      <h1>Content Studio</h1>
+      <span class="tag">Portfolio CMS</span>
+      <span class="dirty-dot" id="dirty-dot" title="Unsaved changes"></span>
+    </div>
+    <button class="btn ghost" id="btn-reload" title="Reload from content.json">↻ Reload</button>
+    <button class="btn ghost" id="btn-import">⬆ Import</button>
+    <input type="file" id="file-input" accept="application/json,.json" hidden>
+    <button class="btn ghost" id="btn-draft-save">💾 Save draft</button>
+    <button class="btn ghost" id="btn-draft-load">📂 Load draft</button>
+    <button class="btn" id="btn-export">⬇ Export JSON</button>
+    <a class="btn ghost" id="btn-preview" href="index-new.html" target="_blank">👁 Preview site</a>
+  </header>
+
+  <div class="layout">
+    <main class="form-pane">
+      <p class="hint">Edit any field below. Arrays (projects, skills, achievements…) support add &amp; remove. Changes update the JSON preview on the right. <strong>Export</strong> to download <code>content.json</code>, or <strong>Publish</strong> to commit it straight to GitHub.</p>
+      <div id="form"><p class="hint">Loading content…</p></div>
+    </main>
+
+    <aside class="side-pane">
+      <div class="side-h">Live JSON</div>
+      <pre class="json-view" id="json-view">{}</pre>
+
+      <div class="side-h">Publish to GitHub</div>
+      <p class="gh-help">Commits <code>content.json</code> to your repo via the GitHub API. Needs a <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">fine-grained token</a> with <strong>Contents: Read &amp; write</strong> on this repo. The token is used only in your browser.</p>
+      <div class="gh-row">
+        <div class="gh-field"><label>Owner</label><input id="gh-owner" type="text" placeholder="roshan5619"></div>
+        <div class="gh-field"><label>Repo</label><input id="gh-repo" type="text" placeholder="Portfolio"></div>
+      </div>
+      <div class="gh-row">
+        <div class="gh-field"><label>Branch</label><input id="gh-branch" type="text" placeholder="master"></div>
+        <div class="gh-field"><label>Path</label><input id="gh-path" type="text" placeholder="content.json"></div>
+      </div>
+      <div class="gh-field"><label>Personal access token</label><input id="gh-token" type="password" placeholder="github_pat_…"></div>
+      <label class="checkrow"><input type="checkbox" id="gh-remember"> Remember token on this device</label>
+      <button class="btn primary" id="btn-publish" style="width:100%;justify-content:center;">🚀 Publish to GitHub</button>
+      <div class="status" id="status"></div>
+
+      <div class="side-h">Danger zone</div>
+      <button class="btn danger small" id="btn-clear-draft">Clear saved draft</button>
+    </aside>
+  </div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

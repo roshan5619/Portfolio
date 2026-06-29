@@ -1,0 +1,344 @@
+{
+  "meta": {
+    "name": "Bandlapalli Roshan Babu",
+    "title": "Roshan Babu — AI & Quantum ML Researcher",
+    "description": "Bandlapalli Roshan Babu — AI Engineer, Quantum ML Researcher, NLP & RL Specialist | M.Tech AI & Data Science, Mahindra University | Qiskit Advocate 2025",
+    "volume": "Vol 01 / 2025"
+  },
+  "nav": {
+    "brandMark": "Roshan Babu",
+    "brandSuffix": "Portfolio",
+    "cvUrl": "RoshanBabu_CV.pdf",
+    "cvLabel": "Download CV",
+    "links": [
+      { "label": "Profile", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "ML", "href": "#ai-ml" },
+      { "label": "NLP", "href": "#nlp" },
+      { "label": "DL", "href": "#dl" },
+      { "label": "RL", "href": "#rl" },
+      { "label": "Quantum", "href": "#quantum" },
+      { "label": "Honours", "href": "#achievements" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "kicker": "The Quantum-AI Researcher",
+    "volumeLabel": "A Profile · Volume 01",
+    "sectionLabel": "The Profile",
+    "firstName": "Bandlapalli",
+    "lastName": "Roshan Babu.",
+    "role": "AI Engineer · Quantum ML Researcher · NLP & RL Specialist",
+    "photo": "profile.jpeg",
+    "photoCaption": "Roshan Babu, photographed at Mahindra University · 2025",
+    "dropCap": "M",
+    "lead": "Tech student in Artificial Intelligence & Data Science at Mahindra University, currently pioneering the development of the world's first Quantum-Classical Facial Biometric System at Lloyd's Bank Research. A Qiskit Advocate 2025, published researcher (ICIET), poster presenter at Supercomputing India 2025, Perplexity Campus Ambassador, and a member of the Indian National Throwball Team — Runner-up at the Indo-Sri Lanka Youth Cup 2024.",
+    "stats": [
+      { "value": "8.51", "label": "B.Tech CGPA" },
+      { "value": "7.38", "label": "M.Tech CGPA" },
+      { "value": "15+", "label": "Selected Projects" },
+      { "value": "'25", "label": "Qiskit Advocate" }
+    ],
+    "cta": [
+      { "label": "Read the Profile", "href": "#about", "arrow": "→", "download": false },
+      { "label": "Download CV (PDF)", "href": "RoshanBabu_CV.pdf", "arrow": "↓", "download": true }
+    ]
+  },
+  "about": {
+    "kicker": "The Profile",
+    "title": "A researcher at the",
+    "titleEm": "intersection of quantum.",
+    "leadProse": "From neural networks to quantum circuits.",
+    "prose": [
+      "I'm a passionate AI researcher and engineer completing my M.Tech in Artificial Intelligence & Data Science at Mahindra University, Hyderabad. Currently spearheading groundbreaking research on the world's first Quantum-Classical Facial Biometric System in collaboration with Lloyd's Bank.",
+      "My work spans the full spectrum of modern AI — from training deep neural networks and building conversational LLM agents to implementing Variational Quantum Circuits. I'm a Qiskit Advocate 2025 (selected by IBM), a published researcher, and a Perplexity Campus Ambassador driving AI literacy."
+    ],
+    "pullQuote": "Building the bridge between Classical and Quantum Intelligence.",
+    "education": [
+      {
+        "year": "'24–'26",
+        "degree": "M.Tech — Artificial Intelligence & Data Science",
+        "school": "Mahindra University, Hyderabad",
+        "meta": "CGPA 7.38 · Merit Scholarship Recipient"
+      },
+      {
+        "year": "'20–'24",
+        "degree": "B.Tech — Computer Science & Engineering",
+        "school": "Mahindra University, Hyderabad",
+        "meta": "CGPA 8.51"
+      }
+    ],
+    "highlightsTitle": "Of Note",
+    "highlights": [
+      "Research Intern at Lloyd's Bank — Quantum Biometrics",
+      "Published at ICIET — Inventory Management with AI",
+      "IBM Qiskit Advocate 2025",
+      "Poster Presenter — Supercomputing India 2025",
+      "Perplexity Campus Ambassador",
+      "Indian National Throwball Team — Runner-up",
+      "Director of Photography — Regional Film"
+    ]
+  },
+  "sections": [
+    {
+      "id": "ai-ml",
+      "number": "01",
+      "kicker": "Section No. 01",
+      "title": "Artificial Intelligence",
+      "titleEm": "& Machine Learning.",
+      "sub": "Building intelligent systems with end-to-end ML pipelines and hybrid quantum-classical approaches.",
+      "columns": [
+        {
+          "title": "Competencies",
+          "type": "skills",
+          "items": [
+            { "dt": "Machine Learning", "dd": "Scikit-learn, Pandas, NumPy · Classification, Regression, Clustering, Dimensionality Reduction" },
+            { "dt": "Frameworks", "dd": "PyTorch, TensorFlow, Keras · Streamlit, Jupyter · Git, VS Code, Linux" },
+            { "dt": "Data Science", "dd": "Matplotlib, Seaborn, Plotly · SciPy, EDA · Feature Engineering, Data Cleaning" },
+            { "dt": "Programming", "dd": "Python (advanced), Java, SQL · JavaScript · OOP, DSA, REST APIs" }
+          ]
+        },
+        {
+          "title": "Experience",
+          "type": "timeline",
+          "items": [
+            { "year": "'25", "role": "Research Intern", "company": "Lloyd's Bank @ Mahindra University", "date": "Aug 2025 — Present", "desc": "Spearheading development of the first-ever Quantum Facial Biometric System, integrating classical Computer Vision with Quantum Machine Learning using VQCs and hybrid CNN architectures." },
+            { "year": "'23", "role": "Machine Learning Intern", "company": "Bharat Intern", "date": "Oct — Nov 2023", "desc": "Built end-to-end ML pipelines for House Price Prediction, Wine Quality Prediction, and Iris Classification using Scikit-learn and Pandas." },
+            { "year": "'23", "role": "ML Internship Training", "company": "Skill Vertex", "date": "May — Jun 2023", "desc": "Comprehensive training in supervised and unsupervised learning algorithms, feature engineering, and model evaluation using Python and Scikit-learn." }
+          ]
+        }
+      ],
+      "projects": [
+        { "num": "No. 01", "title": "Quantum-Classical Facial Biometrics", "titleEm": "research", "tags": "Qiskit · PyTorch · OpenCV · VQC", "img": "project-aiml-1.jpg", "caption": "Quantum-Classical Pipeline", "link": { "label": "View", "href": "" } },
+        { "num": "No. 02", "title": "Crop Recommendation System", "titleEm": "ML", "tags": "Scikit-learn · Pandas · Streamlit", "img": "project-aiml-2.jpg", "caption": "Crop Recommendation", "link": { "label": "View", "href": "" } }
+      ],
+      "resume": { "label": "Download AI/ML Resume", "href": "RoshanBabu_AI.pdf" }
+    },
+    {
+      "id": "nlp",
+      "number": "02",
+      "kicker": "Section No. 02",
+      "title": "Natural Language",
+      "titleEm": "& LLM Engineering.",
+      "sub": "Building intelligent language systems with Transformers, RAG pipelines, and LLM agents.",
+      "columns": [
+        {
+          "title": "Competencies",
+          "type": "skills",
+          "items": [
+            { "dt": "Text Processing", "dd": "Tokenization, Stemming, POS Tagging · Sentiment Analysis · NLTK, spaCy" },
+            { "dt": "Transformers & LLMs", "dd": "BERT, GPT Architectures · Attention Mechanisms · LangChain, LangGraph" },
+            { "dt": "RAG & Agents", "dd": "Retrieval-Augmented Generation · LangGraph QA Agents · Prompt Engineering · Vector Stores" },
+            { "dt": "Embeddings & GenAI", "dd": "GloVe, Word2Vec · BiLSTM, RNN · VAEs, GANs · Human-in-the-Loop AI" }
+          ]
+        },
+        {
+          "title": "Stack",
+          "type": "chips",
+          "items": ["LangChain", "LangGraph", "RAG Pipelines", "Prompt Engineering", "HuggingFace", "FAISS", "Streamlit", "BiLSTM", "GloVe", "Word2Vec", "Transformers"]
+        }
+      ],
+      "projects": [
+        { "num": "No. 01", "title": "Multilingual Customer Support Chatbot", "titleEm": "NLP", "tags": "Transformers · Streamlit", "img": "project-nlp-1.jpg", "caption": "Multilingual Chatbot", "link": { "label": "View", "href": "" } },
+        { "num": "No. 02", "title": "Emotion Detection — GloVe + BiLSTM", "titleEm": "NLP", "tags": "GloVe · BiLSTM · Keras", "img": "project-nlp-2.jpg", "caption": "Emotion Detection", "link": { "label": "View", "href": "" } }
+      ],
+      "moreList": {
+        "title": "Also worth reading",
+        "items": [
+          { "strong": "QA Agent with LangGraph", "text": "Intelligent query-answering agent using LLM + LangGraph state machine." },
+          { "strong": "RAG Pipeline App", "text": "Retrieval-Augmented Generation with FAISS vector store and LangChain." },
+          { "strong": "Human-in-the-Loop Generative AI", "text": "Interactive AI workflow with LangChain and Streamlit." },
+          { "strong": "Twitter Sentiment Analysis", "text": "1D CNN architecture for multi-class sentiment classification." }
+        ]
+      },
+      "resume": { "label": "Download NLP Resume", "href": "RoshanBabu_MlNLP.pdf" }
+    },
+    {
+      "id": "dl",
+      "number": "03",
+      "kicker": "Section No. 03",
+      "title": "Deep Learning &",
+      "titleEm": "Neural Architectures.",
+      "sub": "From CNNs and autoencoders to custom from-scratch implementations with NumPy.",
+      "columns": [
+        {
+          "title": "Architectures",
+          "type": "skills",
+          "items": [
+            { "dt": "CNNs", "dd": "Image classification, object detection (YOLO), feature extraction" },
+            { "dt": "Recurrent", "dd": "LSTM, GRU, BiLSTM for sequential data and time-series" },
+            { "dt": "Autoencoders", "dd": "Denoising autoencoders, anomaly detection, representation learning" },
+            { "dt": "Generative", "dd": "GANs for image synthesis, VAEs for latent space learning" }
+          ]
+        },
+        {
+          "title": "Implementation",
+          "type": "skills",
+          "items": [
+            { "dt": "PyTorch & TensorFlow", "dd": "Production-grade model development and deployment" },
+            { "dt": "Keras (High-level)", "dd": "Rapid prototyping and model experimentation" },
+            { "dt": "From Scratch (NumPy)", "dd": "ANN with full backprop, momentum SGD, L2 regularization" },
+            { "dt": "Transfer Learning", "dd": "Fine-tuning pre-trained models for domain-specific tasks" }
+          ]
+        }
+      ],
+      "projects": [
+        { "num": "No. 01", "title": "Denoising Autoencoder", "titleEm": "CNN", "tags": "Keras · CNN · MNIST", "img": "project-dl-1.jpg", "caption": "Denoising Autoencoder", "link": { "label": "View", "href": "" } },
+        { "num": "No. 02", "title": "ANN from Scratch", "titleEm": "NumPy", "tags": "NumPy · Backprop · SGD", "img": "project-dl-2.jpg", "caption": "ANN from Scratch", "link": { "label": "View", "href": "" } },
+        { "num": "No. 03", "title": "ECG Anomaly Detection", "titleEm": "LSTM", "tags": "TensorFlow · LSTM · Autoencoder", "img": "project-dl-3.jpg", "caption": "ECG Anomaly Detection", "link": { "label": "View", "href": "" } }
+      ],
+      "resume": { "label": "Download DL Resume", "href": "RoshanBabu.pdf" }
+    },
+    {
+      "id": "rl",
+      "number": "04",
+      "kicker": "Section No. 04",
+      "title": "Reinforcement",
+      "titleEm": "Learning.",
+      "sub": "Implementing classic RL algorithms — from value iteration to Monte Carlo methods.",
+      "columns": [
+        {
+          "title": "Algorithms",
+          "type": "skills",
+          "items": [
+            { "dt": "Value Iteration", "dd": "Dynamic programming for optimal policy computation in MDPs" },
+            { "dt": "Monte Carlo", "dd": "First-visit & every-visit MC prediction, MC control" },
+            { "dt": "Policy Evaluation", "dd": "Value functions for stochastic policies, Bellman equations" },
+            { "dt": "Environment Design", "dd": "OpenAI Gym, custom gridworld MDPs" }
+          ]
+        },
+        {
+          "title": "Tools",
+          "type": "skills",
+          "items": [
+            { "dt": "OpenAI Gym", "dd": "FrozenLake, Blackjack, CartPole environments" },
+            { "dt": "MDP Framework", "dd": "States, actions, rewards, transition probabilities" },
+            { "dt": "NumPy Implementations", "dd": "Pure numpy RL implementations for deep understanding" },
+            { "dt": "Policy vs Value", "dd": "Comparison of model-based and model-free approaches" }
+          ]
+        }
+      ],
+      "projects": [
+        { "num": "No. 01", "title": "Frozen Lake — Value Iteration", "titleEm": "DP", "tags": "OpenAI Gym · NumPy", "img": "project-rl-1.jpg", "caption": "Frozen Lake — Value Iteration", "link": { "label": "View on GitHub", "href": "https://github.com/roshan5619/frozen-lake-value-iteration" } },
+        { "num": "No. 02", "title": "Blackjack — Monte Carlo Prediction", "titleEm": "MC", "tags": "Monte Carlo · NumPy", "img": "project-rl-1.jpg", "caption": "Blackjack — Monte Carlo", "link": { "label": "View on GitHub", "href": "https://github.com/roshan5619/blackjack-monte-carlo" } },
+        { "num": "No. 03", "title": "Value Function — Stochastic Policy", "titleEm": "Bellman", "tags": "Policy Eval · Bellman · NumPy", "img": "project-rl-1.jpg", "caption": "Stochastic Policy Value Function", "link": { "label": "View on GitHub", "href": "https://github.com/roshan5619/stochastic-policy-value-function" } },
+        { "num": "No. 04", "title": "MC Predictions & Its Types", "titleEm": "study", "tags": "First-visit · Every-visit · NumPy", "img": "project-rl-1.jpg", "caption": "MC Predictions and Types", "link": { "label": "View on GitHub", "href": "https://github.com/roshan5619/mc-predictions" } }
+      ],
+      "resume": { "label": "Download DS/RL Resume", "href": "RoshanBabu_DS.pdf" }
+    },
+    {
+      "id": "quantum",
+      "number": "05",
+      "kicker": "Section No. 05 · The Cover Story",
+      "title": "Quantum Machine",
+      "titleEm": "Learning.",
+      "sub": "Qiskit Advocate 2025 · Presenter at Supercomputing India 2025 (C-DAC / MEITY) · Pioneering hybrid quantum-classical systems.",
+      "badge": {
+        "icon": "⚛",
+        "title": "IBM Qiskit Advocate 2025",
+        "text": "Selected for the prestigious IBM Qiskit Advocate Program — recognized for outstanding contributions to the quantum computing community through research, education, and open-source collaboration."
+      },
+      "columns": [
+        {
+          "title": "Quantum Machine Learning",
+          "type": "skills",
+          "items": [
+            { "dt": "Variational Circuits", "dd": "VQCs for classification and optimization tasks" },
+            { "dt": "Quantum Neural Nets", "dd": "QCNN architectures, hybrid classical-quantum layers" },
+            { "dt": "Quantum Kernels", "dd": "QSVM, quantum-enhanced feature spaces" },
+            { "dt": "IBM Quantum Hardware", "dd": "QASM Simulator, real quantum hardware execution" }
+          ]
+        },
+        {
+          "title": "Fundamentals",
+          "type": "skills",
+          "items": [
+            { "dt": "Qiskit Framework", "dd": "Circuit design, quantum gates, measurements, transpilation" },
+            { "dt": "Quantum Algorithms", "dd": "Grover's search, oracle circuits, amplitude amplification" },
+            { "dt": "Hybrid Pipelines", "dd": "Seamless classical-quantum integration with PyTorch" },
+            { "dt": "Quantum Information", "dd": "Qubits, entanglement, superposition, quantum noise" }
+          ]
+        }
+      ],
+      "certificationsTitle": "Certifications",
+      "certifications": [
+        { "name": "Quantum Computation", "issuer": "AICTE Faculty Development Program", "link": { "label": "View certificate", "href": "https://www.linkedin.com/posts/roshan-babu-59602a236_quantum-computation-activity-7359151517955776513-_swX" } },
+        { "name": "Quantum Machine Learning", "issuer": "IBM (Credly)", "link": { "label": "View badge", "href": "https://www.credly.com/badges/d5ae9145-a97a-4771-81d8-01010f53c53f/public_url" } },
+        { "name": "Basics of Quantum Information", "issuer": "IBM (Credly)", "link": { "label": "View badge", "href": "https://www.credly.com/badges/47687486-1598-4208-85b1-43e64877132b/public_url" } },
+        { "name": "Fundamentals of Quantum Algorithms", "issuer": "IBM (Credly)", "link": { "label": "View badge", "href": "https://www.credly.com/badges/410863e7-eb92-48b4-957e-ee2dc664fc65/public_url" } }
+      ],
+      "projects": [
+        { "num": "No. 01", "title": "Quantum Facial Biometric System", "titleEm": "research", "tags": "Qiskit · PyTorch · VQC · OpenCV", "img": "project-qml-1.jpg", "caption": "Quantum Facial Biometric System", "link": { "label": "View", "href": "" } },
+        { "num": "No. 02", "title": "Oracle Circuit & Grover's Algorithm", "titleEm": "algorithm", "tags": "Qiskit · QASM · IBM Q", "img": "project-qml-2.jpg", "caption": "Oracle Circuit · Grover's Algorithm", "link": { "label": "View", "href": "" } }
+      ],
+      "resume": { "label": "Download Quantum Resume", "href": "RoshanBabu_Quantum.pdf" }
+    }
+  ],
+  "achievements": {
+    "number": "06",
+    "kicker": "Section No. 06",
+    "title": "Recognition",
+    "titleEm": "& Leadership.",
+    "sub": "Excellence in research, international sports, community leadership, and creative arts.",
+    "categories": [
+      {
+        "num": "i.",
+        "title": "Research & Technical Excellence",
+        "items": [
+          { "tag": "Honour", "name": "IBM Qiskit Advocate 2025", "nameEm": true, "desc": "Selected for the prestigious IBM Qiskit Advocate Program — recognized globally for contributions to quantum computing research and community.", "featured": true },
+          { "tag": "Publication", "name": "Published Researcher", "nameEm": false, "desc": "Published paper \"Inventory Management using AI\" at ICIET International Conference.", "featured": false },
+          { "tag": "Research", "name": "Quantum Biometrics Pioneer", "nameEm": false, "desc": "Developing the world's first Quantum-Classical Facial Biometric System at Lloyd's Bank Research, Mahindra University.", "featured": false },
+          { "tag": "Conference", "name": "Supercomputing India 2025 — Poster Presenter", "nameEm": true, "desc": "Presented poster \"Development of Hybrid Quantum Machine Learning Methods for Facial Bio-metrics\" at SCI2025, organized by C-DAC & Ministry of Electronics & IT, at MIT Bengaluru (Dec 9–13, 2025).", "featured": true },
+          { "tag": "Competition", "name": "Google Code Vipasana 2025", "nameEm": false, "desc": "Participated in prestigious Google-sponsored coding competition, demonstrating competitive programming excellence.", "featured": false }
+        ]
+      },
+      {
+        "num": "ii.",
+        "title": "Leadership & Community",
+        "items": [
+          { "tag": "Ambassador", "name": "Perplexity Campus Ambassador", "nameEm": true, "desc": "Promoting AI literacy, organizing workshops, and driving adoption of AI tools across the student community at Mahindra University.", "featured": true },
+          { "tag": "Captain", "name": "Throwball Club Captain", "nameEm": false, "desc": "Captain & Incharge of Mahindra University Throwball Club — leading team strategy, training, and player development.", "featured": false },
+          { "tag": "Scholarship", "name": "Merit Scholarship Recipient", "nameEm": false, "desc": "Awarded merit-based scholarship for outstanding academic performance in the M.Tech AI & Data Science program.", "featured": false },
+          { "tag": "Workshop", "name": "Quantum Workshop Conductor", "nameEm": false, "desc": "Organized and led sessions educating peers on leveraging Quantum Computing for research, covering Qiskit and QML fundamentals.", "featured": false }
+        ]
+      },
+      {
+        "num": "iii.",
+        "title": "Sports & Creative Arts",
+        "items": [
+          { "tag": "International", "name": "Indian National Throwball Team", "nameEm": true, "desc": "Represented India in Men's Throwball at the Indo-Sri Lanka Youth Cup 2024 — achieved Runner-up position at the international level.", "featured": true },
+          { "tag": "Film", "name": "Director of Photography", "nameEm": false, "desc": "Served as DOP in a regional short film competition — showcasing creative versatility and storytelling skills beyond technology.", "featured": false }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Letters to the Editor",
+    "title": "Let's build",
+    "titleEm": "something.",
+    "lead": "Open to research collaborations, internships, and exciting AI projects. Whether quantum computing, deep learning, or the next generation of AI systems — I'd love to connect.",
+    "info": [
+      { "label": "Email", "value": "broshann14@gmail.com", "href": "mailto:broshann14@gmail.com" },
+      { "label": "Phone", "value": "+91 6301607295", "href": "tel:+916301607295" },
+      { "label": "GitHub", "value": "github.com/roshan5619", "href": "https://github.com/roshan5619" },
+      { "label": "LinkedIn", "value": "linkedin.com/in/roshan-babu", "href": "https://www.linkedin.com/in/roshan-babu-59602a236/" }
+    ],
+    "form": {
+      "action": "https://formspree.io/f/YOUR_FORM_ID",
+      "submitLabel": "Send Letter"
+    }
+  },
+  "footer": {
+    "brand": "Roshan Babu. — Vol 01 / 2025",
+    "meta": "© 2025 Bandlapalli Roshan Babu · All work, all rights reserved."
+  },
+  "marquees": [
+    "Quantum × Classical",
+    "AI · ML · NLP · DL · RL · Quantum",
+    "Intelligent Systems",
+    "Language is data. Data is poetry.",
+    "Neural · Architectures",
+    "Learn through interaction.",
+    "⚛ Qiskit Advocate 2025 ⚛"
+  ]
+}
